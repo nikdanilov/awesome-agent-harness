@@ -11,8 +11,7 @@ Every project listed here **owns and executes the agent loop**. Adjacent infrast
 ## Contents
 
 - [At a Glance](#at-a-glance)
-- [CLI & Terminal Harnesses](#cli--terminal-harnesses)
-- [IDE & Editor Harnesses](#ide--editor-harnesses)
+- [Coding Harnesses](#coding-harnesses)
 - [Agent Multiplexers & Control Planes](#agent-multiplexers--control-planes)
 - [Autonomous & Sandbox-First Harnesses](#autonomous--sandbox-first-harnesses)
 - [Personal & Browser Harnesses](#personal--browser-harnesses)
@@ -24,19 +23,20 @@ Every project listed here **owns and executes the agent loop**. Adjacent infrast
 
 ### Coding Harnesses
 
-| Harness                       | Mobile       | Browser      | Parallel  | Models      |
-| ----------------------------- | ------------ | ------------ | --------- | ----------- |
-| **OpenCode** *(229k★ · MIT)*  | Self-hosted  | Plugin       | Worktrees | Any         |
-| **Claude Code** *(157k★)*     | Official app | User browser | Worktrees | Claude      |
-| **Codex** *(136k★ · Apache)*  | Official app | User browser | Worktrees | OpenAI      |
-| **Pi** *(124k★ · MIT)*        | Community    | Plugin       | Plugin    | Any         |
-| **Cline** *(72k★ · Apache)*   | —            | User browser | —         | Any         |
-| **Goose** *(57k★ · Apache)*   | —            | Plugin       | —         | Any         |
-| **Aider** *(50k★ · stale)*    | —            | —            | —         | Any         |
-| **Crush** *(29k★ · FSL-1.1)*  | —            | Plugin       | —         | Any         |
-| **Kilo Code** *(28k★ · MIT)*  | —            | User browser | —         | Any         |
-| **Roo Code** *(24k★ · stale)* | —            | User browser | —         | Any         |
-| **Antigravity** *(3k★)*       | —            | Built-in     | Swarms    | Multi-model |
+| Harness                          | Mobile       | Browser      | Parallel  | Models      |
+| -------------------------------- | ------------ | ------------ | --------- | ----------- |
+| **OpenCode** *(229k★ · MIT)*     | Self-hosted  | Plugin       | Worktrees | Any         |
+| **Claude Code** *(157k★)*        | Official app | User browser | Worktrees | Claude      |
+| **Codex** *(136k★ · Apache)*     | Official app | User browser | Worktrees | OpenAI      |
+| **Pi** *(124k★ · MIT)*           | Community    | Plugin       | Plugin    | Any         |
+| **Cline** *(72k★ · Apache)*      | —            | User browser | —         | Any         |
+| **Goose** *(57k★ · Apache)*      | —            | Plugin       | —         | Any         |
+| **Aider** *(50k★ · stale)*       | —            | —            | —         | Any         |
+| **Crush** *(29k★ · FSL-1.1)*     | —            | Plugin       | —         | Any         |
+| **Kilo Code** *(28k★ · MIT)*     | —            | User browser | —         | Any         |
+| **Grok Build** *(28k★ · Apache)* | —            | Plugin       | Worktrees | Any         |
+| **Roo Code** *(24k★ · stale)*    | —            | User browser | —         | Any         |
+| **Antigravity** *(3k★)*          | —            | Built-in     | Swarms    | Multi-model |
 
 ### Agent Multiplexers & Control Planes
 
@@ -52,37 +52,34 @@ Every project listed here **owns and executes the agent loop**. Adjacent infrast
 
 ### Always-On, Autonomous & Browser Harnesses
 
-| Harness                          | Mobile    | Browser      | Parallel  | Models |
-| -------------------------------- | --------- | ------------ | --------- | ------ |
-| **OpenClaw** *(395k★ · MIT)*     | Messaging | User browser | Daemon    | Any    |
-| **Hermes Agent** *(266k★ · MIT)* | Messaging | Headless     | Daemon    | Any    |
-| **Browser Use** *(122k★ · MIT)*  | —         | User browser | Multi-tab | Any    |
-| **OpenHands** *(94k★ · MIT)*     | Web UI    | Headless     | Cloud     | Any    |
-| **SWE-agent** *(21k★ · MIT)*     | —         | —            | Batch     | Any    |
+| Harness                          | Mobile       | Browser      | Parallel  | Models |
+| -------------------------------- | ------------ | ------------ | --------- | ------ |
+| **OpenClaw** *(395k★ · MIT)*     | Messaging    | User browser | Daemon    | Any    |
+| **Hermes Agent** *(266k★ · MIT)* | Messaging    | Headless     | Daemon    | Any    |
+| **Browser Use** *(122k★ · MIT)*  | —            | User browser | Multi-tab | Any    |
+| **OpenHands** *(94k★ · MIT)*     | Web UI       | Headless     | Cloud     | Any    |
+| **SWE-agent** *(21k★ · MIT)*     | —            | —            | Batch     | Any    |
+| **Grok Bot**                     | Official app | Built-in     | Cloud     | Grok   |
 
 ---
 
-## CLI & Terminal Harnesses
+## Coding Harnesses
 
-Terminal-native agent harnesses that run directly alongside local repositories, shells, and Git workflows.
+Interactive coding agent harnesses spanning terminals, desktop apps, and IDE extensions.
 
 - [Aider](https://github.com/Aider-AI/aider) - Git-native Python terminal pair programmer with repository mapping, clean multi-file diffs, and automatic commits *(last active 2026-05)*.
 - [Antigravity](https://github.com/google-antigravity/antigravity-cli) - Google's agentic development harness across CLI (`agy`), desktop app, and IDE with a built-in browser agent, sandboxing, and parallel swarms.
-- [Claude Code](https://github.com/anthropics/claude-code) - Anthropic's terminal coding harness with worktrees, lifecycle hooks, Chrome extension, and official mobile Remote Control.
-- [Codex](https://github.com/openai/codex) - OpenAI's Rust CLI, desktop, cloud, and mobile-paired remote harness with OS-level sandboxing and scheduled automations.
+- [Claude Code](https://github.com/anthropics/claude-code) - Anthropic's coding harness across terminal, IDE extensions, Chrome extension, and official mobile Remote Control with worktrees and hooks.
+- [Cline](https://github.com/cline/cline) - Open-source VS Code agent harness with Plan/Act modes, shadow-git checkpoints, built-in browser control, and MCP.
+- [Codex](https://github.com/openai/codex) - OpenAI's Rust coding harness across CLI, IDE extensions, desktop, cloud, and mobile-paired remote control with OS sandboxing and automations.
+- [Continue](https://github.com/continuedev/continue) - Open-source IDE coding assistant and agent extension for VS Code and JetBrains supporting bring-your-own models.
 - [Crush](https://github.com/charmbracelet/crush) - Multi-model Go terminal coding harness by Charmbracelet with LSP-aware edits and MCP support.
 - [Goose](https://github.com/aaif-goose/goose) - Single-binary Rust agent harness with native MCP extensions, named sessions, and repeatable headless recipes.
+- [Grok Build](https://github.com/xai-org/grok-build) - xAI's open-source Rust coding harness with mouse-interactive TUI, headless CI mode, ACP editor integration, worktree subagents, MCP, and LSP.
+- [Kilo Code](https://github.com/Kilo-Org/kilocode) - Open-source, model-agnostic coding agent spanning VS Code, JetBrains, CLI, and cloud surfaces.
 - [OpenCode](https://github.com/anomalyco/opencode) - Open-source terminal, desktop, and self-hosted web/mobile coding harness supporting 75+ model providers and LSP.
 - [Pi](https://github.com/earendil-works/pi) - Minimalist TypeScript terminal harness built around four core tools (`read`, `write`, `edit`, `bash`) and 25+ lifecycle hooks.
 - [Plandex](https://github.com/plandex-ai/plandex) - Terminal coding harness designed for large multi-file tasks using structured planning and reviewable diff sandboxes *(last active 2025-10)*.
-
-## IDE & Editor Harnesses
-
-Harnesses embedded directly inside code editors with visual diff review, checkpoints, and step-gated approvals.
-
-- [Cline](https://github.com/cline/cline) - Open-source VS Code agent harness with Plan/Act modes, shadow-git checkpoints, built-in browser control, and MCP.
-- [Continue](https://github.com/continuedev/continue) - Open-source IDE coding assistant and agent extension for VS Code and JetBrains supporting bring-your-own models.
-- [Kilo Code](https://github.com/Kilo-Org/kilocode) - Open-source, model-agnostic coding agent spanning VS Code, JetBrains, CLI, and cloud surfaces.
 - [Roo Code](https://github.com/RooCodeInc/Roo-Code) - Extensible IDE agent harness derived from Cline featuring customizable agent modes, browser control, and terminal execution *(last active 2026-05)*.
 
 ## Agent Multiplexers & Control Planes
@@ -102,6 +99,7 @@ Control planes, multiplexers, and overlays that coordinate multiple coding agent
 
 End-to-end engineering runtimes built around containerized execution and long-horizon autonomous loops.
 
+- [Grok Bot](https://grok.com) - xAI's autonomous teammate platform giving each persistent agent its own cloud VM sandbox, terminal, browser/computer use, and multi-bot orchestration.
 - [OpenHands](https://github.com/OpenHands/OpenHands) - Open-source autonomous software engineering platform (formerly OpenDevin) with containerized sandboxes, LiteLLM routing, and ACP.
 - [SWE-agent](https://github.com/SWE-agent/SWE-agent) - Research-to-production autonomous harness introducing purpose-built Agent-Computer Interfaces for resolving GitHub issues.
 - [TrueForge](https://github.com/truefoundry/trueforge) - Open-source agent harness managing model loops, MCP tools, skills, sandboxed execution, and approvals via UI, API, and SDK.

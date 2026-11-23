@@ -24,8 +24,7 @@ body:
     attributes:
       label: Category
       options:
-        - CLI & Terminal Harnesses
-        - IDE & Editor Harnesses
+        - Coding Harnesses
         - Agent Multiplexers & Control Planes
         - Autonomous & Sandbox-First Harnesses
         - Personal & Browser Harnesses

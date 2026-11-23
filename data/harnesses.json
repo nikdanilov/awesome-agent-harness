@@ -2,14 +2,9 @@
   "updatedAt": "2026-11-23",
   "categories": [
     {
-      "id": "cli",
-      "title": "CLI & Terminal Harnesses",
-      "summary": "Terminal-native agent harnesses that run directly alongside local repositories, shells, and Git workflows."
-    },
-    {
-      "id": "ide",
-      "title": "IDE & Editor Harnesses",
-      "summary": "Harnesses embedded directly inside code editors with visual diff review, checkpoints, and step-gated approvals."
+      "id": "coding",
+      "title": "Coding Harnesses",
+      "summary": "Interactive coding agent harnesses spanning terminals, desktop apps, and IDE extensions."
     },
     {
       "id": "multiplexers",
@@ -36,7 +31,7 @@
     {
       "name": "Aider",
       "repo": "Aider-AI/aider",
-      "category": "cli",
+      "category": "coding",
       "tableGroup": "coding",
       "stars": 50229,
       "license": "Apache-2.0",
@@ -50,7 +45,7 @@
     {
       "name": "Claude Code",
       "repo": "anthropics/claude-code",
-      "category": "cli",
+      "category": "coding",
       "tableGroup": "coding",
       "stars": 156810,
       "license": "",
@@ -59,12 +54,12 @@
       "browser": "User browser",
       "parallel": "Worktrees",
       "models": "Claude",
-      "description": "Anthropic's terminal coding harness with worktrees, lifecycle hooks, Chrome extension, and official mobile Remote Control."
+      "description": "Anthropic's coding harness across terminal, IDE extensions, Chrome extension, and official mobile Remote Control with worktrees and hooks."
     },
     {
       "name": "Codex",
       "repo": "openai/codex",
-      "category": "cli",
+      "category": "coding",
       "tableGroup": "coding",
       "stars": 136242,
       "license": "Apache-2.0",
@@ -73,12 +68,12 @@
       "browser": "User browser",
       "parallel": "Worktrees",
       "models": "OpenAI",
-      "description": "OpenAI's Rust CLI, desktop, cloud, and mobile-paired remote harness with OS-level sandboxing and scheduled automations."
+      "description": "OpenAI's Rust coding harness across CLI, IDE extensions, desktop, cloud, and mobile-paired remote control with OS sandboxing and automations."
     },
     {
       "name": "Crush",
       "repo": "charmbracelet/crush",
-      "category": "cli",
+      "category": "coding",
       "tableGroup": "coding",
       "stars": 29175,
       "license": "FSL-1.1",
@@ -92,7 +87,7 @@
     {
       "name": "Antigravity",
       "repo": "google-antigravity/antigravity-cli",
-      "category": "cli",
+      "category": "coding",
       "tableGroup": "coding",
       "stars": 3012,
       "license": "",
@@ -106,7 +101,7 @@
     {
       "name": "Goose",
       "repo": "aaif-goose/goose",
-      "category": "cli",
+      "category": "coding",
       "tableGroup": "coding",
       "stars": 56900,
       "license": "Apache-2.0",
@@ -118,9 +113,23 @@
       "description": "Single-binary Rust agent harness with native MCP extensions, named sessions, and repeatable headless recipes."
     },
     {
+      "name": "Grok Build",
+      "repo": "xai-org/grok-build",
+      "category": "coding",
+      "tableGroup": "coding",
+      "stars": 27837,
+      "license": "Apache-2.0",
+      "pushedAt": "2026-09-29",
+      "mobile": "—",
+      "browser": "Plugin",
+      "parallel": "Worktrees",
+      "models": "Any",
+      "description": "xAI's open-source Rust coding harness with mouse-interactive TUI, headless CI mode, ACP editor integration, worktree subagents, MCP, and LSP."
+    },
+    {
       "name": "OpenCode",
       "repo": "anomalyco/opencode",
-      "category": "cli",
+      "category": "coding",
       "tableGroup": "coding",
       "stars": 228782,
       "license": "MIT",
@@ -134,7 +143,7 @@
     {
       "name": "Pi",
       "repo": "earendil-works/pi",
-      "category": "cli",
+      "category": "coding",
       "tableGroup": "coding",
       "stars": 123506,
       "license": "MIT",
@@ -148,7 +157,7 @@
     {
       "name": "Plandex",
       "repo": "plandex-ai/plandex",
-      "category": "cli",
+      "category": "coding",
       "tableGroup": null,
       "stars": 15928,
       "license": "MIT",
@@ -162,7 +171,7 @@
     {
       "name": "Cline",
       "repo": "cline/cline",
-      "category": "ide",
+      "category": "coding",
       "tableGroup": "coding",
       "stars": 71849,
       "license": "Apache-2.0",
@@ -176,7 +185,7 @@
     {
       "name": "Continue",
       "repo": "continuedev/continue",
-      "category": "ide",
+      "category": "coding",
       "tableGroup": null,
       "stars": 36543,
       "license": "Apache-2.0",
@@ -190,7 +199,7 @@
     {
       "name": "Kilo Code",
       "repo": "Kilo-Org/kilocode",
-      "category": "ide",
+      "category": "coding",
       "tableGroup": "coding",
       "stars": 28098,
       "license": "MIT",
@@ -204,7 +213,7 @@
     {
       "name": "Roo Code",
       "repo": "RooCodeInc/Roo-Code",
-      "category": "ide",
+      "category": "coding",
       "tableGroup": "coding",
       "stars": 24237,
       "license": "Apache-2.0",
@@ -326,6 +335,21 @@
       "parallel": "Subagents",
       "models": "Host CLIs",
       "description": "Structured agent harness overlay emphasizing versioned specs, skill recording, and coherent multi-platform workspaces."
+    },
+    {
+      "name": "Grok Bot",
+      "repo": null,
+      "url": "https://grok.com",
+      "category": "autonomous",
+      "tableGroup": "always-on",
+      "stars": 0,
+      "license": "",
+      "pushedAt": "2026-11-23",
+      "mobile": "Official app",
+      "browser": "Built-in",
+      "parallel": "Cloud",
+      "models": "Grok",
+      "description": "xAI's autonomous teammate platform giving each persistent agent its own cloud VM sandbox, terminal, browser/computer use, and multi-bot orchestration."
     },
     {
       "name": "OpenHands",

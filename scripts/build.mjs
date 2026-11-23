@@ -55,6 +55,7 @@ async function refreshGitHubStats() {
   };
 
   for (const h of data.harnesses) {
+    if (!h.repo) continue;
     const res = await fetch(`https://api.github.com/repos/${h.repo}`, { headers });
     if (!res.ok) {
       console.warn(`Skipping ${h.repo}: HTTP ${res.status}`);
@@ -120,7 +121,8 @@ function buildReadme() {
       const desc = h.description.endsWith(".")
         ? `${h.description.slice(0, -1)}${staleNote}.`
         : `${h.description}${staleNote}.`;
-      return `- [${h.name}](https://github.com/${h.repo}) - ${desc}`;
+      const href = h.url || `https://github.com/${h.repo}`;
+      return `- [${h.name}](${href}) - ${desc}`;
     });
 
     return [`## ${cat.title}`, "", cat.summary, "", ...bullets].join("\n");
