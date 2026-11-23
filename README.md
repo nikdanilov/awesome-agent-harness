@@ -1,6 +1,6 @@
 # Awesome Agent Harness [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A strictly scoped list of AI agent harnesses—the execution runtimes wrapped around LLMs that own the agent loop, context management, tool calling, permissions, and workspace isolation.
+> A curated list of AI agent harnesses—the execution runtimes wrapped around LLMs that own the agent loop, context management, tool calling, permissions, and workspace isolation.
 
 ```text
 Agent = Model + Harness
