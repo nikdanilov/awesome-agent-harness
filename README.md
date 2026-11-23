@@ -126,4 +126,4 @@ Code-first SDKs exposing a complete agent harness runtime (execution loop, tools
 
 ## Contributing
 
-Contributions are welcome! Edit [`data/harnesses.json`](data/harnesses.json) and run `node scripts/build.mjs`—see [CONTRIBUTING.md](CONTRIBUTING.md) for the scope test and guidelines.
+Contributions are welcome! Edit `data/harnesses.json` and run `node scripts/build.mjs`—see [CONTRIBUTING.md](CONTRIBUTING.md) for the scope test and guidelines.
