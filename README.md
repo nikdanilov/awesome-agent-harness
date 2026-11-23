@@ -22,23 +22,21 @@ Every project listed here **owns and executes the agent loop**. Adjacent infrast
 
 ## At a Glance
 
-Live GitHub snapshot (`2026-11-23`), generated from [`data/harnesses.json`](data/harnesses.json).
-
 ### Coding Harnesses
 
-| Harness                           | Mobile       | Browser      | Parallel  | Models |
-| --------------------------------- | ------------ | ------------ | --------- | ------ |
-| **OpenCode** *(229k★ · MIT)*      | Self-hosted  | Plugin       | Worktrees | Any    |
-| **Claude Code** *(157k★)*         | Official app | User browser | Worktrees | Claude |
-| **Codex** *(136k★ · Apache)*      | Official app | User browser | Worktrees | OpenAI |
-| **Pi** *(124k★ · MIT)*            | Community    | Plugin       | Plugin    | Any    |
-| **Gemini CLI** *(109k★ · Apache)* | —            | Plugin       | —         | Gemini |
-| **Cline** *(72k★ · Apache)*       | —            | User browser | —         | Any    |
-| **Goose** *(57k★ · Apache)*       | —            | Plugin       | —         | Any    |
-| **Aider** *(50k★ · stale)*        | —            | —            | —         | Any    |
-| **Crush** *(29k★ · FSL-1.1)*      | —            | Plugin       | —         | Any    |
-| **Kilo Code** *(28k★ · MIT)*      | —            | User browser | —         | Any    |
-| **Roo Code** *(24k★ · stale)*     | —            | User browser | —         | Any    |
+| Harness                       | Mobile       | Browser      | Parallel  | Models      |
+| ----------------------------- | ------------ | ------------ | --------- | ----------- |
+| **OpenCode** *(229k★ · MIT)*  | Self-hosted  | Plugin       | Worktrees | Any         |
+| **Claude Code** *(157k★)*     | Official app | User browser | Worktrees | Claude      |
+| **Codex** *(136k★ · Apache)*  | Official app | User browser | Worktrees | OpenAI      |
+| **Pi** *(124k★ · MIT)*        | Community    | Plugin       | Plugin    | Any         |
+| **Cline** *(72k★ · Apache)*   | —            | User browser | —         | Any         |
+| **Goose** *(57k★ · Apache)*   | —            | Plugin       | —         | Any         |
+| **Aider** *(50k★ · stale)*    | —            | —            | —         | Any         |
+| **Crush** *(29k★ · FSL-1.1)*  | —            | Plugin       | —         | Any         |
+| **Kilo Code** *(28k★ · MIT)*  | —            | User browser | —         | Any         |
+| **Roo Code** *(24k★ · stale)* | —            | User browser | —         | Any         |
+| **Antigravity** *(3k★)*       | —            | Built-in     | Swarms    | Multi-model |
 
 ### Agent Multiplexers & Control Planes
 
@@ -46,6 +44,8 @@ Live GitHub snapshot (`2026-11-23`), generated from [`data/harnesses.json`](data
 | -------------------------------- | ------------ | -------- | ------------- | --------- |
 | **T3 Code** *(74k★ · MIT)*       | Official app | Via host | Worktrees     | Host CLIs |
 | **oh-my-openagent** *(71k★)*     | Via host     | Via host | Subagents     | Any       |
+| **Herdr** *(52k★ · Apache)*      | Community    | Via host | Daemon        | Host CLIs |
+| **cmux** *(29k★)*                | Official app | Built-in | Multi-pane    | Host CLIs |
 | **Trellis** *(15k★ · AGPL-3.0)*  | —            | Via host | Subagents     | Host CLIs |
 | **better-harness** *(2k★ · MIT)* | —            | Via host | Batch         | Host CLIs |
 | **OpenHarness** *(2k★ · MIT)*    | Web UI       | Via host | Multi-session | Host CLIs |
@@ -67,10 +67,10 @@ Live GitHub snapshot (`2026-11-23`), generated from [`data/harnesses.json`](data
 Terminal-native agent harnesses that run directly alongside local repositories, shells, and Git workflows.
 
 - [Aider](https://github.com/Aider-AI/aider) - Git-native Python terminal pair programmer with repository mapping, clean multi-file diffs, and automatic commits *(last active 2026-05)*.
+- [Antigravity](https://github.com/google-antigravity/antigravity-cli) - Google's agentic development harness across CLI (`agy`), desktop app, and IDE with a built-in browser agent, sandboxing, and parallel swarms.
 - [Claude Code](https://github.com/anthropics/claude-code) - Anthropic's terminal coding harness with worktrees, lifecycle hooks, Chrome extension, and official mobile Remote Control.
 - [Codex](https://github.com/openai/codex) - OpenAI's Rust CLI, desktop, cloud, and mobile-paired remote harness with OS-level sandboxing and scheduled automations.
 - [Crush](https://github.com/charmbracelet/crush) - Multi-model Go terminal coding harness by Charmbracelet with LSP-aware edits and MCP support.
-- [Gemini CLI](https://github.com/google-gemini/gemini-cli) - Google's open-source terminal agent harness with OS/Docker sandboxing and extensible MCP tooling.
 - [Goose](https://github.com/aaif-goose/goose) - Single-binary Rust agent harness with native MCP extensions, named sessions, and repeatable headless recipes.
 - [OpenCode](https://github.com/anomalyco/opencode) - Open-source terminal, desktop, and self-hosted web/mobile coding harness supporting 75+ model providers and LSP.
 - [Pi](https://github.com/earendil-works/pi) - Minimalist TypeScript terminal harness built around four core tools (`read`, `write`, `edit`, `bash`) and 25+ lifecycle hooks.
@@ -90,7 +90,9 @@ Harnesses embedded directly inside code editors with visual diff review, checkpo
 Control planes, multiplexers, and overlays that coordinate multiple coding agent sessions or host harnesses in parallel.
 
 - [better-harness](https://github.com/QoderAI/better-harness) - Open-source harness engineering toolkit for defining harnesses as code, running controlled experiments, and comparing outcomes.
+- [cmux](https://github.com/manaflow-ai/cmux) - Ghostty-based native terminal multiplexer for AI coding agents with agent-aware notifications, an in-app scriptable split browser, and a companion mobile app.
 - [Harness²](https://github.com/google-research/harness2) - Google Research framework exploring recursive agent harnessing via propose-probe-compose loops in open-world tasks.
+- [Herdr](https://github.com/herdrdev/herdr) - Rust terminal multiplexer and persistent daemon for coding agents with semantic state tracking (working/blocked/done), multi-machine SSH orchestration, and socket API.
 - [oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) - Multi-agent orchestration overlay for OpenCode adding parallel subagents, background tasks, and persistent execution modes.
 - [OpenHarness](https://github.com/autonomous-ai/openharness) - Open-source command center and multiplexer for running parallel coding agent sessions with persistent contexts and messaging.
 - [T3 Code](https://github.com/pingdotgg/t3code) - Unified desktop, web, and mobile multiplexer for controlling local Claude Code, Codex, and OpenCode sessions over worktrees.
@@ -116,6 +118,7 @@ Always-on local runtimes and browser-execution harnesses connecting models to me
 
 Code-first SDKs exposing a complete agent harness runtime (execution loop, tools, sandboxing, and session management).
 
+- [Antigravity SDK (Python)](https://github.com/google-antigravity/antigravity-sdk-python) - Official Python SDK for programmatic agent leasing, orchestration, and custom tools on Google Antigravity.
 - [Claude Agent SDK (Python)](https://github.com/anthropics/claude-agent-sdk-python) - Official Python SDK exposing Claude Code's agent loop, local tooling, permissions, and in-process MCP integration.
 - [Claude Agent SDK (TypeScript)](https://github.com/anthropics/claude-agent-sdk-typescript) - Official TypeScript SDK for programmatically embedding and customizing Claude's agent harness.
 - [Deep Agents](https://github.com/langchain-ai/deepagents) - Batteries-included open-source Python agent harness and CLI from LangChain with task planning, filesystem memory, and subagents.

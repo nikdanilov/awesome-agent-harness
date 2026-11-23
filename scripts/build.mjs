@@ -145,8 +145,6 @@ function buildReadme() {
     "",
     "## At a Glance",
     "",
-    `Live GitHub snapshot (\`${data.updatedAt}\`), generated from [\`data/harnesses.json\`](data/harnesses.json).`,
-    "",
     "### Coding Harnesses",
     "",
     buildTable("coding"),

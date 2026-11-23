@@ -90,18 +90,18 @@
       "description": "Multi-model Go terminal coding harness by Charmbracelet with LSP-aware edits and MCP support."
     },
     {
-      "name": "Gemini CLI",
-      "repo": "google-gemini/gemini-cli",
+      "name": "Antigravity",
+      "repo": "google-antigravity/antigravity-cli",
       "category": "cli",
       "tableGroup": "coding",
-      "stars": 109020,
-      "license": "Apache-2.0",
+      "stars": 3012,
+      "license": "",
       "pushedAt": "2026-11-23",
       "mobile": "—",
-      "browser": "Plugin",
-      "parallel": "—",
-      "models": "Gemini",
-      "description": "Google's open-source terminal agent harness with OS/Docker sandboxing and extensible MCP tooling."
+      "browser": "Built-in",
+      "parallel": "Swarms",
+      "models": "Multi-model",
+      "description": "Google's agentic development harness across CLI (`agy`), desktop app, and IDE with a built-in browser agent, sandboxing, and parallel swarms."
     },
     {
       "name": "Goose",
@@ -230,6 +230,20 @@
       "description": "Open-source harness engineering toolkit for defining harnesses as code, running controlled experiments, and comparing outcomes."
     },
     {
+      "name": "cmux",
+      "repo": "manaflow-ai/cmux",
+      "category": "multiplexers",
+      "tableGroup": "multiplexers",
+      "stars": 28919,
+      "license": "",
+      "pushedAt": "2026-11-23",
+      "mobile": "Official app",
+      "browser": "Built-in",
+      "parallel": "Multi-pane",
+      "models": "Host CLIs",
+      "description": "Ghostty-based native terminal multiplexer for AI coding agents with agent-aware notifications, an in-app scriptable split browser, and a companion mobile app."
+    },
+    {
       "name": "Harness²",
       "repo": "google-research/harness2",
       "category": "multiplexers",
@@ -242,6 +256,20 @@
       "parallel": "Subagents",
       "models": "Any",
       "description": "Google Research framework exploring recursive agent harnessing via propose-probe-compose loops in open-world tasks."
+    },
+    {
+      "name": "Herdr",
+      "repo": "herdrdev/herdr",
+      "category": "multiplexers",
+      "tableGroup": "multiplexers",
+      "stars": 52491,
+      "license": "Apache-2.0",
+      "pushedAt": "2026-11-19",
+      "mobile": "Community",
+      "browser": "Via host",
+      "parallel": "Daemon",
+      "models": "Host CLIs",
+      "description": "Rust terminal multiplexer and persistent daemon for coding agents with semantic state tracking (working/blocked/done), multi-machine SSH orchestration, and socket API."
     },
     {
       "name": "oh-my-openagent",
@@ -382,6 +410,20 @@
       "parallel": "Daemon",
       "models": "Any",
       "description": "Self-hosted, pluggable TypeScript personal agent gateway connecting local automations and browser control to 20+ messaging apps."
+    },
+    {
+      "name": "Antigravity SDK (Python)",
+      "repo": "google-antigravity/antigravity-sdk-python",
+      "category": "sdks",
+      "tableGroup": null,
+      "stars": 4178,
+      "license": "Apache-2.0",
+      "pushedAt": "2026-11-19",
+      "mobile": "—",
+      "browser": "Built-in",
+      "parallel": "Swarms",
+      "models": "Multi-model",
+      "description": "Official Python SDK for programmatic agent leasing, orchestration, and custom tools on Google Antigravity."
     },
     {
       "name": "Claude Agent SDK (Python)",
