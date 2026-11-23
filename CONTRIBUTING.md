@@ -1,13 +1,13 @@
 # Contributing to Awesome Agent Harness
 
-Thanks for helping keep this list sharp and strictly scoped! Please review the scope test and keep/remove criteria before submitting a pull request.
+Thanks for helping keep this list sharp! Please review the scope test and keep/remove criteria before submitting a pull request.
 
-## Scope Test (Strict)
+## Scope Test
 
 **Does the project own and execute the agent loop?**
 
-- **Keep:** Runnable agent harnesses (CLI, IDE, autonomous/sandbox-first, personal/browser), meta-harnesses that orchestrate or experiment over host harnesses, and harness SDKs that ship a complete execution runtime.
-- **Out of scope:** Standalone sandboxes, memory databases, observability/tracing platforms, benchmarks, MCP servers, prompt/skill packs (those belong in an agent skills catalog), and general LLM app/workflow frameworks that do not ship a harness runtime.
+- **Keep:** Runnable agent harnesses (CLI, IDE, autonomous/sandbox-first, personal/browser), agent multiplexers/control planes that coordinate host harnesses, and harness SDKs that ship a complete execution runtime.
+- **Out of scope:** Standalone sandboxes, memory databases, observability/tracing platforms, benchmarks, MCP servers, prompt/skill packs, and general LLM workflow frameworks.
 
 ## Keep / Remove Rubric
 
@@ -24,22 +24,17 @@ Entries that pass the scope test are evaluated on four signals (0–2 each; **ke
 - Near-duplicate fork that does not diverge meaningfully from its upstream harness.
 - Broken repository links or missing documentation.
 
-## Formatting Rules
+## How to Submit an Entry
 
-- Use the exact entry format:
+`README.md` is generated from [`data/harnesses.json`](data/harnesses.json).
 
-  ```markdown
-  - [Project Name](https://link-to-project) - Concise, neutral one-sentence description ending with a period.
-  ```
-
-- Keep entries **alphabetically sorted** within each section.
-- Write neutral, factual descriptions without marketing superlatives.
-- Use canonical repository URLs without tracking parameters.
-- Submit **one entry per pull request** unless adding a cohesive new category.
+1. Add your entry to `data/harnesses.json` with concise, factual fields (`mobile`, `browser`, `parallel`, `models` should each be 1–2 words).
+2. Run `node scripts/build.mjs` to regenerate `README.md` with aligned tables and alphabetical ordering.
+3. Verify no duplicate URLs or broken links remain.
 
 ## Pull Request Checklist
 
-- [ ] Project passes the strict "owns the agent loop" scope test.
-- [ ] Entry is placed in the right category and sorted alphabetically.
-- [ ] Description is concise, accurate, and ends with a period.
-- [ ] URL resolves cleanly and is not duplicated elsewhere in `README.md`.
+- [ ] Project passes the "owns the agent loop" scope test.
+- [ ] Entry added to `data/harnesses.json` and `README.md` regenerated with `node scripts/build.mjs`.
+- [ ] Description is concise, neutral, and ends with a period.
+- [ ] URL resolves cleanly without redirects.

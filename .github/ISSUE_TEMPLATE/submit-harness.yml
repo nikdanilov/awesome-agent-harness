@@ -1,5 +1,5 @@
 name: Submit an Agent Harness
-description: Suggest a runnable AI agent harness, meta-harness, or harness SDK.
+description: Suggest a runnable AI agent harness, multiplexer, or harness SDK.
 title: "[Add]: "
 labels: ["submission"]
 body:
@@ -26,8 +26,8 @@ body:
       options:
         - CLI & Terminal Harnesses
         - IDE & Editor Harnesses
+        - Agent Multiplexers & Control Planes
         - Autonomous & Sandbox-First Harnesses
-        - Meta-Harnesses
         - Personal & Browser Harnesses
         - Harness SDKs
     validations:
@@ -37,7 +37,7 @@ body:
     id: description
     attributes:
       label: One-Line Description
-      description: Concise, neutral summary of what makes this harness architecturally distinct.
+      description: Concise, neutral summary of what makes this harness distinct.
       placeholder: Open-source terminal coding harness supporting 75+ providers and LSP integration.
     validations:
       required: true
