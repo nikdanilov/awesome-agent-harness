@@ -20,11 +20,6 @@
       "id": "autonomous",
       "title": "Autonomous SWE Harnesses",
       "summary": "Containerized software engineering runtimes built for unattended issue resolution and long-horizon repo automation."
-    },
-    {
-      "id": "sdks",
-      "title": "Harness SDKs",
-      "summary": "Code-first SDKs exposing a complete agent harness runtime (execution loop, tools, sandboxing, and session management)."
     }
   ],
   "harnesses": [
@@ -500,60 +495,6 @@
       "license": "MIT",
       "pushedAt": "2026-11-23",
       "description": "Open-source agent harness managing model loops, MCP tools, skills, sandboxed execution, and approvals via UI, API, and SDK."
-    },
-    {
-      "name": "Antigravity SDK (Python)",
-      "repo": "google-antigravity/antigravity-sdk-python",
-      "category": "sdks",
-      "stars": 4178,
-      "license": "Apache-2.0",
-      "pushedAt": "2026-11-19",
-      "description": "Official Python SDK for programmatic agent leasing, orchestration, and custom tools on Google Antigravity."
-    },
-    {
-      "name": "Claude Agent SDK (Python)",
-      "repo": "anthropics/claude-agent-sdk-python",
-      "category": "sdks",
-      "stars": 8632,
-      "license": "MIT",
-      "pushedAt": "2026-11-20",
-      "description": "Official Python SDK exposing Claude Code's agent loop, local tooling, permissions, and in-process MCP integration."
-    },
-    {
-      "name": "Claude Agent SDK (TypeScript)",
-      "repo": "anthropics/claude-agent-sdk-typescript",
-      "category": "sdks",
-      "stars": 1902,
-      "license": "",
-      "pushedAt": "2026-11-20",
-      "description": "Official TypeScript SDK for programmatically embedding and customizing Claude's agent harness."
-    },
-    {
-      "name": "Deep Agents",
-      "repo": "langchain-ai/deepagents",
-      "category": "sdks",
-      "stars": 31537,
-      "license": "MIT",
-      "pushedAt": "2026-11-23",
-      "description": "Batteries-included open-source Python agent harness and CLI from LangChain with task planning, filesystem memory, and subagents."
-    },
-    {
-      "name": "OpenAI Agents SDK",
-      "repo": "openai/openai-agents-python",
-      "category": "sdks",
-      "stars": 30842,
-      "license": "MIT",
-      "pushedAt": "2026-11-23",
-      "description": "Lightweight Python SDK for agent loops, multi-agent handoffs, guardrails, sessions, and execution tracing."
-    },
-    {
-      "name": "Strands Agents Harness SDK",
-      "repo": "strands-agents/harness-sdk",
-      "category": "sdks",
-      "stars": 9279,
-      "license": "Apache-2.0",
-      "pushedAt": "2026-11-23",
-      "description": "Open-source Python/TypeScript harness SDK providing policy-enforced sandboxing, built-in tools, and evaluation hooks."
     }
   ]
 }

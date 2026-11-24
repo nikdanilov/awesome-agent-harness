@@ -128,7 +128,7 @@ function buildEnvTable() {
     "Own Browser",
     "Your Browser",
     "Built-in Apps",
-    "Any MCP",
+    "MCP",
   ];
   const alignments = ["left", "center", "center", "center", "center", "center", "center"];
   const rows = validatedEntries().map((h) => [

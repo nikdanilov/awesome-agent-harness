@@ -1,5 +1,5 @@
 name: Submit an Agent Harness
-description: Suggest a runnable AI agent harness, multiplexer, or harness SDK.
+description: Suggest a runnable AI agent harness or multiplexer.
 title: "[Add]: "
 labels: ["submission"]
 body:
@@ -24,11 +24,10 @@ body:
     attributes:
       label: Category
       options:
+        - Personal & Always-On Harnesses
         - Coding Harnesses
         - Agent Multiplexers & Control Planes
-        - Personal & Always-On Harnesses
         - Autonomous SWE Harnesses
-        - Harness SDKs
     validations:
       required: true
 

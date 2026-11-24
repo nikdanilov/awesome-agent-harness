@@ -20,7 +20,6 @@ Every project listed here **owns and executes the agent loop**. Adjacent infrast
 - [Coding Harnesses](#coding-harnesses)
 - [Agent Multiplexers & Control Planes](#agent-multiplexers--control-planes)
 - [Autonomous SWE Harnesses](#autonomous-swe-harnesses)
-- [Harness SDKs](#harness-sdks)
 
 ---
 
@@ -30,18 +29,18 @@ Every project listed here **owns and executes the agent loop**. Adjacent infrast
 
 ### Tools & Environment
 
-| Harness                          | Own VM | Your Machine | Own Browser | Your Browser | Built-in Apps | Any MCP |
-| -------------------------------- | :----: | :----------: | :---------: | :----------: | :-----------: | :-----: |
-| **OpenClaw** *(395k★ · MIT)*     |   ○    |      ●       |      ●      |      ○       |       ○       |    ○    |
-| **Hermes Agent** *(266k★ · MIT)* |   ○    |      ●       |      ●      |      ○       |       ○       |    ○    |
-| **OpenBot** *(13k★ · MIT)*       |   ●    |      ○       |      ●      |      —       |       ○       |    ●    |
-| **TrustClaw** *(919★ · MIT)*     |   ●    |      —       |      —      |      —       |       ○       |    —    |
-| **Poke**                         |   ●    |      —       |      ●      |      —       |       ○       |    ○    |
-| **Grok Bot**                     |   ●    |      ○       |      ●      |      ?       |       ○       |    ○    |
-| **Muse**                         |   ●    |      ○       |      ●      |      ○       |       ○       |    ○    |
-| **Duet**                         |   ●    |      ○       |      ●      |      ○       |       ○       |    ○    |
-| **Dots**                         |   ●    |      ○       |      ●      |      ○       |       ○       |    ○    |
-| **Instinct**                     |   ●    |      ○       |      ●      |      ○       |       ○       |    —    |
+| Harness                          | Own VM | Your Machine | Own Browser | Your Browser | Built-in Apps | MCP |
+| -------------------------------- | :----: | :----------: | :---------: | :----------: | :-----------: | :-: |
+| **OpenClaw** *(395k★ · MIT)*     |   ○    |      ●       |      ●      |      ○       |       ○       |  ○  |
+| **Hermes Agent** *(266k★ · MIT)* |   ○    |      ●       |      ●      |      ○       |       ○       |  ○  |
+| **OpenBot** *(13k★ · MIT)*       |   ●    |      ○       |      ●      |      —       |       ○       |  ●  |
+| **TrustClaw** *(919★ · MIT)*     |   ●    |      —       |      —      |      —       |       ○       |  —  |
+| **Poke**                         |   ●    |      —       |      ●      |      —       |       ○       |  ○  |
+| **Grok Bot**                     |   ●    |      ○       |      ●      |      ?       |       ○       |  ○  |
+| **Muse**                         |   ●    |      ○       |      ●      |      ○       |       ○       |  ○  |
+| **Duet**                         |   ●    |      ○       |      ●      |      ○       |       ○       |  ○  |
+| **Dots**                         |   ●    |      ○       |      ●      |      ○       |       ○       |  ○  |
+| **Instinct**                     |   ●    |      ○       |      ●      |      ○       |       ○       |  —  |
 
 ### Channels
 
@@ -112,17 +111,6 @@ Containerized software engineering runtimes built for unattended issue resolutio
 - [OpenHands](https://github.com/OpenHands/OpenHands) - Open-source autonomous software engineering platform (formerly OpenDevin) with containerized sandboxes, LiteLLM routing, and ACP.
 - [SWE-agent](https://github.com/SWE-agent/SWE-agent) - Research-to-production autonomous harness introducing purpose-built Agent-Computer Interfaces for resolving GitHub issues.
 - [TrueForge](https://github.com/truefoundry/trueforge) - Open-source agent harness managing model loops, MCP tools, skills, sandboxed execution, and approvals via UI, API, and SDK.
-
-## Harness SDKs
-
-Code-first SDKs exposing a complete agent harness runtime (execution loop, tools, sandboxing, and session management).
-
-- [Antigravity SDK (Python)](https://github.com/google-antigravity/antigravity-sdk-python) - Official Python SDK for programmatic agent leasing, orchestration, and custom tools on Google Antigravity.
-- [Claude Agent SDK (Python)](https://github.com/anthropics/claude-agent-sdk-python) - Official Python SDK exposing Claude Code's agent loop, local tooling, permissions, and in-process MCP integration.
-- [Claude Agent SDK (TypeScript)](https://github.com/anthropics/claude-agent-sdk-typescript) - Official TypeScript SDK for programmatically embedding and customizing Claude's agent harness.
-- [Deep Agents](https://github.com/langchain-ai/deepagents) - Batteries-included open-source Python agent harness and CLI from LangChain with task planning, filesystem memory, and subagents.
-- [OpenAI Agents SDK](https://github.com/openai/openai-agents-python) - Lightweight Python SDK for agent loops, multi-agent handoffs, guardrails, sessions, and execution tracing.
-- [Strands Agents Harness SDK](https://github.com/strands-agents/harness-sdk) - Open-source Python/TypeScript harness SDK providing policy-enforced sandboxing, built-in tools, and evaluation hooks.
 
 ---
 

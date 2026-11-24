@@ -6,8 +6,8 @@ Thanks for helping keep this list sharp! Please review the scope test and keep/r
 
 **Does the project own and execute the agent loop?**
 
-- **Keep:** Runnable agent harnesses (CLI, IDE, autonomous/sandbox-first, personal/browser), agent multiplexers/control planes that coordinate host harnesses, and harness SDKs that ship a complete execution runtime.
-- **Out of scope:** Standalone sandboxes, memory databases, observability/tracing platforms, benchmarks, MCP servers, prompt/skill packs, and general LLM workflow frameworks.
+- **Keep:** Runnable agent harnesses (personal/always-on, coding, autonomous SWE) and agent multiplexers/control planes that coordinate host harnesses.
+- **Out of scope:** Standalone sandboxes, memory databases, observability/tracing platforms, benchmarks, MCP servers, prompt/skill packs, agent SDKs, and general LLM workflow frameworks.
 
 ## Keep / Remove Rubric
 
