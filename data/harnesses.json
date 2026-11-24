@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-23",
+  "updatedAt": "2026-11-24",
   "categories": [
     {
       "id": "coding",
@@ -12,14 +12,14 @@
       "summary": "Control planes, multiplexers, and overlays that coordinate multiple coding agent sessions or host harnesses in parallel."
     },
     {
-      "id": "autonomous",
-      "title": "Autonomous & Sandbox-First Harnesses",
-      "summary": "End-to-end engineering runtimes built around containerized execution and long-horizon autonomous loops."
+      "id": "personal",
+      "title": "Personal & Always-On Harnesses",
+      "summary": "Proactive personal, cloud-VM, messaging, and browser-execution harnesses that run continuously on their own machine or yours."
     },
     {
-      "id": "personal",
-      "title": "Personal & Browser Harnesses",
-      "summary": "Always-on local runtimes and browser-execution harnesses connecting models to messaging channels, operating systems, or live web pages."
+      "id": "autonomous",
+      "title": "Autonomous SWE Harnesses",
+      "summary": "Containerized software engineering runtimes built for unattended issue resolution and long-horizon repo automation."
     },
     {
       "id": "sdks",
@@ -43,6 +43,20 @@
       "description": "Git-native Python terminal pair programmer with repository mapping, clean multi-file diffs, and automatic commits."
     },
     {
+      "name": "Antigravity",
+      "repo": "google-antigravity/antigravity-cli",
+      "category": "coding",
+      "tableGroup": "coding",
+      "stars": 3012,
+      "license": "",
+      "pushedAt": "2026-11-23",
+      "mobile": "—",
+      "browser": "Built-in",
+      "parallel": "Swarms",
+      "models": "Multi-model",
+      "description": "Google's agentic development harness across CLI (`agy`), desktop app, and IDE with a built-in browser agent, sandboxing, and parallel swarms."
+    },
+    {
       "name": "Claude Code",
       "repo": "anthropics/claude-code",
       "category": "coding",
@@ -55,6 +69,20 @@
       "parallel": "Worktrees",
       "models": "Claude",
       "description": "Anthropic's coding harness across terminal, IDE extensions, Chrome extension, and official mobile Remote Control with worktrees and hooks."
+    },
+    {
+      "name": "Cline",
+      "repo": "cline/cline",
+      "category": "coding",
+      "tableGroup": "coding",
+      "stars": 71849,
+      "license": "Apache-2.0",
+      "pushedAt": "2026-11-23",
+      "mobile": "—",
+      "browser": "User browser",
+      "parallel": "—",
+      "models": "Any",
+      "description": "Open-source VS Code agent harness with Plan/Act modes, shadow-git checkpoints, built-in browser control, and MCP."
     },
     {
       "name": "Codex",
@@ -71,6 +99,20 @@
       "description": "OpenAI's Rust coding harness across CLI, IDE extensions, desktop, cloud, and mobile-paired remote control with OS sandboxing and automations."
     },
     {
+      "name": "Continue",
+      "repo": "continuedev/continue",
+      "category": "coding",
+      "tableGroup": null,
+      "stars": 36543,
+      "license": "Apache-2.0",
+      "pushedAt": "2026-11-23",
+      "mobile": "—",
+      "browser": "—",
+      "parallel": "—",
+      "models": "Any",
+      "description": "Open-source IDE coding assistant and agent extension for VS Code and JetBrains supporting bring-your-own models."
+    },
+    {
       "name": "Crush",
       "repo": "charmbracelet/crush",
       "category": "coding",
@@ -83,20 +125,6 @@
       "parallel": "—",
       "models": "Any",
       "description": "Multi-model Go terminal coding harness by Charmbracelet with LSP-aware edits and MCP support."
-    },
-    {
-      "name": "Antigravity",
-      "repo": "google-antigravity/antigravity-cli",
-      "category": "coding",
-      "tableGroup": "coding",
-      "stars": 3012,
-      "license": "",
-      "pushedAt": "2026-11-23",
-      "mobile": "—",
-      "browser": "Built-in",
-      "parallel": "Swarms",
-      "models": "Multi-model",
-      "description": "Google's agentic development harness across CLI (`agy`), desktop app, and IDE with a built-in browser agent, sandboxing, and parallel swarms."
     },
     {
       "name": "Goose",
@@ -125,6 +153,20 @@
       "parallel": "Worktrees",
       "models": "Any",
       "description": "xAI's open-source Rust coding harness with mouse-interactive TUI, headless CI mode, ACP editor integration, worktree subagents, MCP, and LSP."
+    },
+    {
+      "name": "Kilo Code",
+      "repo": "Kilo-Org/kilocode",
+      "category": "coding",
+      "tableGroup": "coding",
+      "stars": 28098,
+      "license": "MIT",
+      "pushedAt": "2026-11-23",
+      "mobile": "—",
+      "browser": "User browser",
+      "parallel": "—",
+      "models": "Any",
+      "description": "Open-source, model-agnostic coding agent spanning VS Code, JetBrains, CLI, and cloud surfaces."
     },
     {
       "name": "OpenCode",
@@ -167,48 +209,6 @@
       "parallel": "—",
       "models": "Any",
       "description": "Terminal coding harness designed for large multi-file tasks using structured planning and reviewable diff sandboxes."
-    },
-    {
-      "name": "Cline",
-      "repo": "cline/cline",
-      "category": "coding",
-      "tableGroup": "coding",
-      "stars": 71849,
-      "license": "Apache-2.0",
-      "pushedAt": "2026-11-23",
-      "mobile": "—",
-      "browser": "User browser",
-      "parallel": "—",
-      "models": "Any",
-      "description": "Open-source VS Code agent harness with Plan/Act modes, shadow-git checkpoints, built-in browser control, and MCP."
-    },
-    {
-      "name": "Continue",
-      "repo": "continuedev/continue",
-      "category": "coding",
-      "tableGroup": null,
-      "stars": 36543,
-      "license": "Apache-2.0",
-      "pushedAt": "2026-11-23",
-      "mobile": "—",
-      "browser": "—",
-      "parallel": "—",
-      "models": "Any",
-      "description": "Open-source IDE coding assistant and agent extension for VS Code and JetBrains supporting bring-your-own models."
-    },
-    {
-      "name": "Kilo Code",
-      "repo": "Kilo-Org/kilocode",
-      "category": "coding",
-      "tableGroup": "coding",
-      "stars": 28098,
-      "license": "MIT",
-      "pushedAt": "2026-11-23",
-      "mobile": "—",
-      "browser": "User browser",
-      "parallel": "—",
-      "models": "Any",
-      "description": "Open-source, model-agnostic coding agent spanning VS Code, JetBrains, CLI, and cloud surfaces."
     },
     {
       "name": "Roo Code",
@@ -337,19 +337,208 @@
       "description": "Structured agent harness overlay emphasizing versioned specs, skill recording, and coherent multi-platform workspaces."
     },
     {
-      "name": "Grok Bot",
+      "name": "Browser Use",
+      "repo": "browser-use/browser-use",
+      "category": "personal",
+      "tableGroup": "always-on",
+      "stars": 121852,
+      "license": "MIT",
+      "pushedAt": "2026-11-22",
+      "env": {
+        "ownMachine": "none",
+        "yourMachine": "default",
+        "ownBrowser": "default",
+        "yourBrowser": "available",
+        "builtInApps": "none",
+        "anyMcp": "available"
+      },
+      "description": "Open-source web automation harness enabling LLM agents to navigate, click, fill forms, and drive local or headless browsers."
+    },
+    {
+      "name": "Dots",
       "repo": null,
-      "url": "https://grok.com",
-      "category": "autonomous",
+      "url": "https://openai.com/index/introducing-dots/",
+      "category": "personal",
       "tableGroup": "always-on",
       "stars": 0,
       "license": "",
+      "pushedAt": "2026-11-24",
+      "env": {
+        "ownMachine": "default",
+        "yourMachine": "available",
+        "ownBrowser": "default",
+        "yourBrowser": "available",
+        "builtInApps": "available",
+        "anyMcp": "available"
+      },
+      "description": "OpenAI's proactive cross-app personal agent running in a persistent cloud machine with optional local machine/browser access and MCP support."
+    },
+    {
+      "name": "Duet",
+      "repo": null,
+      "url": "https://claude.com/claude-duet",
+      "category": "personal",
+      "tableGroup": "always-on",
+      "stars": 0,
+      "license": "",
+      "pushedAt": "2026-11-24",
+      "env": {
+        "ownMachine": "default",
+        "yourMachine": "available",
+        "ownBrowser": "default",
+        "yourBrowser": "available",
+        "builtInApps": "available",
+        "anyMcp": "available"
+      },
+      "description": "Anthropic's Claude Duet always-on work agent with a managed cloud computer, optional local machine/browser control, built-in apps, and MCP."
+    },
+    {
+      "name": "Grok Bot",
+      "repo": null,
+      "url": "https://grok.com",
+      "category": "personal",
+      "tableGroup": "always-on",
+      "stars": 0,
+      "license": "",
+      "pushedAt": "2026-11-24",
+      "env": {
+        "ownMachine": "default",
+        "yourMachine": "available",
+        "ownBrowser": "default",
+        "yourBrowser": "unknown",
+        "builtInApps": "available",
+        "anyMcp": "available"
+      },
+      "description": "xAI's autonomous teammate fleet giving each persistent agent its own cloud VM sandbox, terminal, browser/computer use, and multi-bot coordination."
+    },
+    {
+      "name": "Hermes Agent",
+      "repo": "NousResearch/hermes-agent",
+      "category": "personal",
+      "tableGroup": "always-on",
+      "stars": 265632,
+      "license": "MIT",
       "pushedAt": "2026-11-23",
-      "mobile": "Official app",
-      "browser": "Built-in",
-      "parallel": "Cloud",
-      "models": "Grok",
-      "description": "xAI's autonomous teammate platform giving each persistent agent its own cloud VM sandbox, terminal, browser/computer use, and multi-bot orchestration."
+      "env": {
+        "ownMachine": "available",
+        "yourMachine": "default",
+        "ownBrowser": "default",
+        "yourBrowser": "available",
+        "builtInApps": "available",
+        "anyMcp": "available"
+      },
+      "description": "Python autonomous agent daemon by Nous Research featuring cross-session memory, messaging channels, browser tools, and self-authored skills."
+    },
+    {
+      "name": "Instinct",
+      "repo": null,
+      "url": "https://www.instinct.com",
+      "category": "personal",
+      "tableGroup": "always-on",
+      "stars": 0,
+      "license": "",
+      "pushedAt": "2026-11-24",
+      "env": {
+        "ownMachine": "default",
+        "yourMachine": "available",
+        "ownBrowser": "default",
+        "yourBrowser": "available",
+        "builtInApps": "available",
+        "anyMcp": "none"
+      },
+      "description": "Autonomous personal concierge agent controlled over text and voice calls using dedicated cloud desktops and browser automation."
+    },
+    {
+      "name": "Muse",
+      "repo": null,
+      "url": "https://ai.meta.com",
+      "category": "personal",
+      "tableGroup": "always-on",
+      "stars": 0,
+      "license": "",
+      "pushedAt": "2026-11-24",
+      "env": {
+        "ownMachine": "default",
+        "yourMachine": "available",
+        "ownBrowser": "default",
+        "yourBrowser": "available",
+        "builtInApps": "available",
+        "anyMcp": "available"
+      },
+      "description": "Meta's proactive personal agent accessible across mobile, web, and WhatsApp with a managed cloud machine, browser automation, and MCP."
+    },
+    {
+      "name": "OpenBot",
+      "repo": "CopilotKit/OpenBot",
+      "category": "personal",
+      "tableGroup": "always-on",
+      "stars": 13395,
+      "license": "MIT",
+      "pushedAt": "2026-11-24",
+      "env": {
+        "ownMachine": "default",
+        "yourMachine": "available",
+        "ownBrowser": "default",
+        "yourBrowser": "none",
+        "builtInApps": "available",
+        "anyMcp": "default"
+      },
+      "description": "Open, self-hostable workspace and multi-agent personal bot platform by CopilotKit plugging into any model, agent, and MCP server."
+    },
+    {
+      "name": "OpenClaw",
+      "repo": "openclaw/openclaw",
+      "category": "personal",
+      "tableGroup": "always-on",
+      "stars": 395103,
+      "license": "MIT",
+      "pushedAt": "2026-11-23",
+      "env": {
+        "ownMachine": "available",
+        "yourMachine": "default",
+        "ownBrowser": "default",
+        "yourBrowser": "available",
+        "builtInApps": "available",
+        "anyMcp": "available"
+      },
+      "description": "Self-hosted, pluggable TypeScript personal agent gateway connecting local automations and browser control to 20+ messaging apps."
+    },
+    {
+      "name": "Poke",
+      "repo": null,
+      "url": "https://poke.com",
+      "category": "personal",
+      "tableGroup": "always-on",
+      "stars": 0,
+      "license": "",
+      "pushedAt": "2026-11-24",
+      "env": {
+        "ownMachine": "default",
+        "yourMachine": "none",
+        "ownBrowser": "default",
+        "yourBrowser": "none",
+        "builtInApps": "available",
+        "anyMcp": "available"
+      },
+      "description": "Messaging-native proactive personal assistant operating across iMessage, WhatsApp, Telegram, and RCS with cloud browser execution and MCP."
+    },
+    {
+      "name": "TrustClaw",
+      "repo": "ComposioHQ/trustclaw",
+      "category": "personal",
+      "tableGroup": "always-on",
+      "stars": 919,
+      "license": "MIT",
+      "pushedAt": "2026-11-17",
+      "env": {
+        "ownMachine": "default",
+        "yourMachine": "none",
+        "ownBrowser": "none",
+        "yourBrowser": "none",
+        "builtInApps": "available",
+        "anyMcp": "none"
+      },
+      "description": "Self-hostable personal AI agent by Composio emphasizing OAuth-sandboxed cloud execution, vector memory, Telegram, and 1,000+ app integrations."
     },
     {
       "name": "OpenHands",
@@ -359,24 +548,24 @@
       "stars": 94160,
       "license": "MIT",
       "pushedAt": "2026-11-23",
-      "mobile": "Web UI",
-      "browser": "Headless",
-      "parallel": "Cloud",
-      "models": "Any",
+      "env": {
+        "ownMachine": "default",
+        "yourMachine": "available",
+        "ownBrowser": "default",
+        "yourBrowser": "none",
+        "builtInApps": "none",
+        "anyMcp": "available"
+      },
       "description": "Open-source autonomous software engineering platform (formerly OpenDevin) with containerized sandboxes, LiteLLM routing, and ACP."
     },
     {
       "name": "SWE-agent",
       "repo": "SWE-agent/SWE-agent",
       "category": "autonomous",
-      "tableGroup": "always-on",
+      "tableGroup": null,
       "stars": 20854,
       "license": "MIT",
       "pushedAt": "2026-11-16",
-      "mobile": "—",
-      "browser": "—",
-      "parallel": "Batch",
-      "models": "Any",
       "description": "Research-to-production autonomous harness introducing purpose-built Agent-Computer Interfaces for resolving GitHub issues."
     },
     {
@@ -387,53 +576,7 @@
       "stars": 6626,
       "license": "MIT",
       "pushedAt": "2026-11-23",
-      "mobile": "Web UI",
-      "browser": "Plugin",
-      "parallel": "Multi-session",
-      "models": "Any",
       "description": "Open-source agent harness managing model loops, MCP tools, skills, sandboxed execution, and approvals via UI, API, and SDK."
-    },
-    {
-      "name": "Browser Use",
-      "repo": "browser-use/browser-use",
-      "category": "personal",
-      "tableGroup": "always-on",
-      "stars": 121852,
-      "license": "MIT",
-      "pushedAt": "2026-11-22",
-      "mobile": "—",
-      "browser": "User browser",
-      "parallel": "Multi-tab",
-      "models": "Any",
-      "description": "Open-source web automation harness enabling LLM agents to navigate, click, fill forms, and drive local or headless browsers."
-    },
-    {
-      "name": "Hermes Agent",
-      "repo": "NousResearch/hermes-agent",
-      "category": "personal",
-      "tableGroup": "always-on",
-      "stars": 265632,
-      "license": "MIT",
-      "pushedAt": "2026-11-23",
-      "mobile": "Messaging",
-      "browser": "Headless",
-      "parallel": "Daemon",
-      "models": "Any",
-      "description": "Python autonomous agent daemon by Nous Research featuring cross-session memory, messaging channels, and self-authored skills."
-    },
-    {
-      "name": "OpenClaw",
-      "repo": "openclaw/openclaw",
-      "category": "personal",
-      "tableGroup": "always-on",
-      "stars": 395103,
-      "license": "MIT",
-      "pushedAt": "2026-11-23",
-      "mobile": "Messaging",
-      "browser": "User browser",
-      "parallel": "Daemon",
-      "models": "Any",
-      "description": "Self-hosted, pluggable TypeScript personal agent gateway connecting local automations and browser control to 20+ messaging apps."
     },
     {
       "name": "Antigravity SDK (Python)",
@@ -443,10 +586,6 @@
       "stars": 4178,
       "license": "Apache-2.0",
       "pushedAt": "2026-11-19",
-      "mobile": "—",
-      "browser": "Built-in",
-      "parallel": "Swarms",
-      "models": "Multi-model",
       "description": "Official Python SDK for programmatic agent leasing, orchestration, and custom tools on Google Antigravity."
     },
     {
@@ -457,10 +596,6 @@
       "stars": 8632,
       "license": "MIT",
       "pushedAt": "2026-11-20",
-      "mobile": "—",
-      "browser": "Plugin",
-      "parallel": "Subagents",
-      "models": "Claude",
       "description": "Official Python SDK exposing Claude Code's agent loop, local tooling, permissions, and in-process MCP integration."
     },
     {
@@ -471,10 +606,6 @@
       "stars": 1902,
       "license": "",
       "pushedAt": "2026-11-20",
-      "mobile": "—",
-      "browser": "Plugin",
-      "parallel": "Subagents",
-      "models": "Claude",
       "description": "Official TypeScript SDK for programmatically embedding and customizing Claude's agent harness."
     },
     {
@@ -485,10 +616,6 @@
       "stars": 31537,
       "license": "MIT",
       "pushedAt": "2026-11-23",
-      "mobile": "—",
-      "browser": "Plugin",
-      "parallel": "Subagents",
-      "models": "Any",
       "description": "Batteries-included open-source Python agent harness and CLI from LangChain with task planning, filesystem memory, and subagents."
     },
     {
@@ -499,10 +626,6 @@
       "stars": 30842,
       "license": "MIT",
       "pushedAt": "2026-11-23",
-      "mobile": "—",
-      "browser": "Plugin",
-      "parallel": "Subagents",
-      "models": "Any",
       "description": "Lightweight Python SDK for agent loops, multi-agent handoffs, guardrails, sessions, and execution tracing."
     },
     {
@@ -513,10 +636,6 @@
       "stars": 9279,
       "license": "Apache-2.0",
       "pushedAt": "2026-11-23",
-      "mobile": "—",
-      "browser": "Plugin",
-      "parallel": "Subagents",
-      "models": "Any",
       "description": "Open-source Python/TypeScript harness SDK providing policy-enforced sandboxing, built-in tools, and evaluation hooks."
     }
   ]

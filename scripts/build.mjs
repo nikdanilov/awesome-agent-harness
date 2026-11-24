@@ -36,13 +36,40 @@ function slug(title) {
     .replace(/ /g, "-");
 }
 
-function alignTable(headers, rows) {
+function envSymbol(val) {
+  switch (val) {
+    case "default":
+      return "●";
+    case "available":
+      return "○";
+    case "unknown":
+      return "?";
+    default:
+      return "—";
+  }
+}
+
+function alignTable(headers, rows, alignments = []) {
   const widths = headers.map((h, i) =>
     Math.max(h.length, 3, ...rows.map((r) => r[i].length))
   );
+  const padCell = (val, width, align) => {
+    if (align === "center") {
+      const total = width - val.length;
+      const left = Math.floor(total / 2);
+      const right = total - left;
+      return " ".repeat(left) + val + " ".repeat(right);
+    }
+    return val.padEnd(width);
+  };
   const padRow = (cols) =>
-    `| ${cols.map((c, i) => c.padEnd(widths[i])).join(" | ")} |`;
-  const sep = `| ${widths.map((w) => "-".repeat(w)).join(" | ")} |`;
+    `| ${cols.map((c, i) => padCell(c, widths[i], alignments[i])).join(" | ")} |`;
+  const sep = `| ${widths
+    .map((w, i) => {
+      if (alignments[i] === "center") return `:${"-".repeat(w - 2)}:`;
+      return "-".repeat(w);
+    })
+    .join(" | ")} |`;
   return [padRow(headers), sep, ...rows.map(padRow)].join("\n");
 }
 
@@ -103,6 +130,36 @@ function buildTable(groupId) {
   return alignTable(headers, rows);
 }
 
+function buildEnvTable() {
+  const headers = [
+    "Harness",
+    "Own VM",
+    "Your Machine",
+    "Own Browser",
+    "Your Browser",
+    "Built-in Apps",
+    "Any MCP",
+  ];
+  const alignments = ["left", "center", "center", "center", "center", "center", "center"];
+  const items = data.harnesses
+    .filter((h) => h.tableGroup === "always-on" && h.env)
+    .sort((a, b) => {
+      if ((b.stars || 0) !== (a.stars || 0)) return (b.stars || 0) - (a.stars || 0);
+      return a.name.toLowerCase().localeCompare(b.name.toLowerCase());
+    });
+
+  const rows = items.map((h) => [
+    `**${h.name}**${buildMeta(h)}`,
+    envSymbol(h.env.ownMachine),
+    envSymbol(h.env.yourMachine),
+    envSymbol(h.env.ownBrowser),
+    envSymbol(h.env.yourBrowser),
+    envSymbol(h.env.builtInApps),
+    envSymbol(h.env.anyMcp),
+  ]);
+  return alignTable(headers, rows, alignments);
+}
+
 function buildReadme() {
   const toc = [
     "- [At a Glance](#at-a-glance)",
@@ -155,9 +212,11 @@ function buildReadme() {
     "",
     buildTable("multiplexers"),
     "",
-    "### Always-On, Autonomous & Browser Harnesses",
+    "### Personal & Autonomous Agents",
     "",
-    buildTable("always-on"),
+    "`●` Default · `○` Available · `—` Not offered · `?` Not published",
+    "",
+    buildEnvTable(),
     "",
     "---",
     "",

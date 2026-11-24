@@ -26,8 +26,8 @@ body:
       options:
         - Coding Harnesses
         - Agent Multiplexers & Control Planes
-        - Autonomous & Sandbox-First Harnesses
-        - Personal & Browser Harnesses
+        - Personal & Always-On Harnesses
+        - Autonomous SWE Harnesses
         - Harness SDKs
     validations:
       required: true
