@@ -28,7 +28,7 @@ Entries that pass the scope test are evaluated on four signals (0–2 each; **ke
 
 `README.md` is generated from [`data/harnesses.json`](data/harnesses.json).
 
-1. Add your entry to `data/harnesses.json` with concise, factual fields (`mobile`, `browser`, `parallel`, `models` should each be 1–2 words).
+1. Add your entry to `data/harnesses.json`. Only populate comparison matrix fields (`env`, `channels`) when directly verified against product docs or testing (use `"unknown"` when not published).
 2. Run `node scripts/build.mjs` to regenerate `README.md` with aligned tables and alphabetical ordering.
 3. Verify no duplicate URLs or broken links remain.
 

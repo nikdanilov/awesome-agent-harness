@@ -2,6 +2,11 @@
   "updatedAt": "2026-11-24",
   "categories": [
     {
+      "id": "personal",
+      "title": "Personal & Always-On Harnesses",
+      "summary": "Proactive personal, cloud-VM, messaging, and browser-execution harnesses that run continuously on their own machine or yours."
+    },
+    {
       "id": "coding",
       "title": "Coding Harnesses",
       "summary": "Interactive coding agent harnesses spanning terminals, desktop apps, and IDE extensions."
@@ -10,11 +15,6 @@
       "id": "multiplexers",
       "title": "Agent Multiplexers & Control Planes",
       "summary": "Control planes, multiplexers, and overlays that coordinate multiple coding agent sessions or host harnesses in parallel."
-    },
-    {
-      "id": "personal",
-      "title": "Personal & Always-On Harnesses",
-      "summary": "Proactive personal, cloud-VM, messaging, and browser-execution harnesses that run continuously on their own machine or yours."
     },
     {
       "id": "autonomous",
@@ -29,467 +29,10 @@
   ],
   "harnesses": [
     {
-      "name": "Aider",
-      "repo": "Aider-AI/aider",
-      "category": "coding",
-      "tableGroup": "coding",
-      "stars": 50229,
-      "license": "Apache-2.0",
-      "pushedAt": "2026-05-22",
-      "mobile": "—",
-      "browser": "—",
-      "parallel": "—",
-      "models": "Any",
-      "description": "Git-native Python terminal pair programmer with repository mapping, clean multi-file diffs, and automatic commits."
-    },
-    {
-      "name": "Antigravity",
-      "repo": "google-antigravity/antigravity-cli",
-      "category": "coding",
-      "tableGroup": "coding",
-      "stars": 3012,
-      "license": "",
-      "pushedAt": "2026-11-23",
-      "mobile": "—",
-      "browser": "Built-in",
-      "parallel": "Swarms",
-      "models": "Multi-model",
-      "description": "Google's agentic development harness across CLI (`agy`), desktop app, and IDE with a built-in browser agent, sandboxing, and parallel swarms."
-    },
-    {
-      "name": "Claude Code",
-      "repo": "anthropics/claude-code",
-      "category": "coding",
-      "tableGroup": "coding",
-      "stars": 156810,
-      "license": "",
-      "pushedAt": "2026-11-23",
-      "mobile": "Official app",
-      "browser": "User browser",
-      "parallel": "Worktrees",
-      "models": "Claude",
-      "description": "Anthropic's coding harness across terminal, IDE extensions, Chrome extension, and official mobile Remote Control with worktrees and hooks."
-    },
-    {
-      "name": "Cline",
-      "repo": "cline/cline",
-      "category": "coding",
-      "tableGroup": "coding",
-      "stars": 71849,
-      "license": "Apache-2.0",
-      "pushedAt": "2026-11-23",
-      "mobile": "—",
-      "browser": "User browser",
-      "parallel": "—",
-      "models": "Any",
-      "description": "Open-source VS Code agent harness with Plan/Act modes, shadow-git checkpoints, built-in browser control, and MCP."
-    },
-    {
-      "name": "Codex",
-      "repo": "openai/codex",
-      "category": "coding",
-      "tableGroup": "coding",
-      "stars": 136242,
-      "license": "Apache-2.0",
-      "pushedAt": "2026-11-23",
-      "mobile": "Official app",
-      "browser": "User browser",
-      "parallel": "Worktrees",
-      "models": "OpenAI",
-      "description": "OpenAI's Rust coding harness across CLI, IDE extensions, desktop, cloud, and mobile-paired remote control with OS sandboxing and automations."
-    },
-    {
-      "name": "Continue",
-      "repo": "continuedev/continue",
-      "category": "coding",
-      "tableGroup": null,
-      "stars": 36543,
-      "license": "Apache-2.0",
-      "pushedAt": "2026-11-23",
-      "mobile": "—",
-      "browser": "—",
-      "parallel": "—",
-      "models": "Any",
-      "description": "Open-source IDE coding assistant and agent extension for VS Code and JetBrains supporting bring-your-own models."
-    },
-    {
-      "name": "Crush",
-      "repo": "charmbracelet/crush",
-      "category": "coding",
-      "tableGroup": "coding",
-      "stars": 29175,
-      "license": "FSL-1.1",
-      "pushedAt": "2026-11-23",
-      "mobile": "—",
-      "browser": "Plugin",
-      "parallel": "—",
-      "models": "Any",
-      "description": "Multi-model Go terminal coding harness by Charmbracelet with LSP-aware edits and MCP support."
-    },
-    {
-      "name": "Goose",
-      "repo": "aaif-goose/goose",
-      "category": "coding",
-      "tableGroup": "coding",
-      "stars": 56900,
-      "license": "Apache-2.0",
-      "pushedAt": "2026-11-23",
-      "mobile": "—",
-      "browser": "Plugin",
-      "parallel": "—",
-      "models": "Any",
-      "description": "Single-binary Rust agent harness with native MCP extensions, named sessions, and repeatable headless recipes."
-    },
-    {
-      "name": "Grok Build",
-      "repo": "xai-org/grok-build",
-      "category": "coding",
-      "tableGroup": "coding",
-      "stars": 27837,
-      "license": "Apache-2.0",
-      "pushedAt": "2026-09-29",
-      "mobile": "—",
-      "browser": "Plugin",
-      "parallel": "Worktrees",
-      "models": "Any",
-      "description": "xAI's open-source Rust coding harness with mouse-interactive TUI, headless CI mode, ACP editor integration, worktree subagents, MCP, and LSP."
-    },
-    {
-      "name": "Kilo Code",
-      "repo": "Kilo-Org/kilocode",
-      "category": "coding",
-      "tableGroup": "coding",
-      "stars": 28098,
-      "license": "MIT",
-      "pushedAt": "2026-11-23",
-      "mobile": "—",
-      "browser": "User browser",
-      "parallel": "—",
-      "models": "Any",
-      "description": "Open-source, model-agnostic coding agent spanning VS Code, JetBrains, CLI, and cloud surfaces."
-    },
-    {
-      "name": "OpenCode",
-      "repo": "anomalyco/opencode",
-      "category": "coding",
-      "tableGroup": "coding",
-      "stars": 228782,
-      "license": "MIT",
-      "pushedAt": "2026-11-23",
-      "mobile": "Self-hosted",
-      "browser": "Plugin",
-      "parallel": "Worktrees",
-      "models": "Any",
-      "description": "Open-source terminal, desktop, and self-hosted web/mobile coding harness supporting 75+ model providers and LSP."
-    },
-    {
-      "name": "Pi",
-      "repo": "earendil-works/pi",
-      "category": "coding",
-      "tableGroup": "coding",
-      "stars": 123506,
-      "license": "MIT",
-      "pushedAt": "2026-11-23",
-      "mobile": "Community",
-      "browser": "Plugin",
-      "parallel": "Plugin",
-      "models": "Any",
-      "description": "Minimalist TypeScript terminal harness built around four core tools (`read`, `write`, `edit`, `bash`) and 25+ lifecycle hooks."
-    },
-    {
-      "name": "Plandex",
-      "repo": "plandex-ai/plandex",
-      "category": "coding",
-      "tableGroup": null,
-      "stars": 15928,
-      "license": "MIT",
-      "pushedAt": "2025-10-03",
-      "mobile": "—",
-      "browser": "—",
-      "parallel": "—",
-      "models": "Any",
-      "description": "Terminal coding harness designed for large multi-file tasks using structured planning and reviewable diff sandboxes."
-    },
-    {
-      "name": "Roo Code",
-      "repo": "RooCodeInc/Roo-Code",
-      "category": "coding",
-      "tableGroup": "coding",
-      "stars": 24237,
-      "license": "Apache-2.0",
-      "pushedAt": "2026-05-15",
-      "mobile": "—",
-      "browser": "User browser",
-      "parallel": "—",
-      "models": "Any",
-      "description": "Extensible IDE agent harness derived from Cline featuring customizable agent modes, browser control, and terminal execution."
-    },
-    {
-      "name": "better-harness",
-      "repo": "QoderAI/better-harness",
-      "category": "multiplexers",
-      "tableGroup": "multiplexers",
-      "stars": 2476,
-      "license": "MIT",
-      "pushedAt": "2026-11-11",
-      "mobile": "—",
-      "browser": "Via host",
-      "parallel": "Batch",
-      "models": "Host CLIs",
-      "description": "Open-source harness engineering toolkit for defining harnesses as code, running controlled experiments, and comparing outcomes."
-    },
-    {
-      "name": "cmux",
-      "repo": "manaflow-ai/cmux",
-      "category": "multiplexers",
-      "tableGroup": "multiplexers",
-      "stars": 28919,
-      "license": "",
-      "pushedAt": "2026-11-23",
-      "mobile": "Official app",
-      "browser": "Built-in",
-      "parallel": "Multi-pane",
-      "models": "Host CLIs",
-      "description": "Ghostty-based native terminal multiplexer for AI coding agents with agent-aware notifications, an in-app scriptable split browser, and a companion mobile app."
-    },
-    {
-      "name": "Harness²",
-      "repo": "google-research/harness2",
-      "category": "multiplexers",
-      "tableGroup": null,
-      "stars": 24934,
-      "license": "Apache-2.0",
-      "pushedAt": "2026-11-02",
-      "mobile": "—",
-      "browser": "—",
-      "parallel": "Subagents",
-      "models": "Any",
-      "description": "Google Research framework exploring recursive agent harnessing via propose-probe-compose loops in open-world tasks."
-    },
-    {
-      "name": "Herdr",
-      "repo": "herdrdev/herdr",
-      "category": "multiplexers",
-      "tableGroup": "multiplexers",
-      "stars": 52491,
-      "license": "Apache-2.0",
-      "pushedAt": "2026-11-19",
-      "mobile": "Community",
-      "browser": "Via host",
-      "parallel": "Daemon",
-      "models": "Host CLIs",
-      "description": "Rust terminal multiplexer and persistent daemon for coding agents with semantic state tracking (working/blocked/done), multi-machine SSH orchestration, and socket API."
-    },
-    {
-      "name": "oh-my-openagent",
-      "repo": "code-yeongyu/oh-my-openagent",
-      "category": "multiplexers",
-      "tableGroup": "multiplexers",
-      "stars": 71082,
-      "license": "",
-      "pushedAt": "2026-11-23",
-      "mobile": "Via host",
-      "browser": "Via host",
-      "parallel": "Subagents",
-      "models": "Any",
-      "description": "Multi-agent orchestration overlay for OpenCode adding parallel subagents, background tasks, and persistent execution modes."
-    },
-    {
-      "name": "OpenHarness",
-      "repo": "autonomous-ai/openharness",
-      "category": "multiplexers",
-      "tableGroup": "multiplexers",
-      "stars": 1530,
-      "license": "MIT",
-      "pushedAt": "2026-11-23",
-      "mobile": "Web UI",
-      "browser": "Via host",
-      "parallel": "Multi-session",
-      "models": "Host CLIs",
-      "description": "Open-source command center and multiplexer for running parallel coding agent sessions with persistent contexts and messaging."
-    },
-    {
-      "name": "T3 Code",
-      "repo": "pingdotgg/t3code",
-      "category": "multiplexers",
-      "tableGroup": "multiplexers",
-      "stars": 74435,
-      "license": "MIT",
-      "pushedAt": "2026-11-23",
-      "mobile": "Official app",
-      "browser": "Via host",
-      "parallel": "Worktrees",
-      "models": "Host CLIs",
-      "description": "Unified desktop, web, and mobile multiplexer for controlling local Claude Code, Codex, and OpenCode sessions over worktrees."
-    },
-    {
-      "name": "Trellis",
-      "repo": "mindfold-ai/Trellis",
-      "category": "multiplexers",
-      "tableGroup": "multiplexers",
-      "stars": 15176,
-      "license": "AGPL-3.0",
-      "pushedAt": "2026-09-29",
-      "mobile": "—",
-      "browser": "Via host",
-      "parallel": "Subagents",
-      "models": "Host CLIs",
-      "description": "Structured agent harness overlay emphasizing versioned specs, skill recording, and coherent multi-platform workspaces."
-    },
-    {
-      "name": "Browser Use",
-      "repo": "browser-use/browser-use",
-      "category": "personal",
-      "tableGroup": "always-on",
-      "stars": 121852,
-      "license": "MIT",
-      "pushedAt": "2026-11-22",
-      "env": {
-        "ownMachine": "none",
-        "yourMachine": "default",
-        "ownBrowser": "default",
-        "yourBrowser": "available",
-        "builtInApps": "none",
-        "anyMcp": "available"
-      },
-      "description": "Open-source web automation harness enabling LLM agents to navigate, click, fill forms, and drive local or headless browsers."
-    },
-    {
-      "name": "Dots",
-      "repo": null,
-      "url": "https://openai.com/index/introducing-dots/",
-      "category": "personal",
-      "tableGroup": "always-on",
-      "stars": 0,
-      "license": "",
-      "pushedAt": "2026-11-24",
-      "env": {
-        "ownMachine": "default",
-        "yourMachine": "available",
-        "ownBrowser": "default",
-        "yourBrowser": "available",
-        "builtInApps": "available",
-        "anyMcp": "available"
-      },
-      "description": "OpenAI's proactive cross-app personal agent running in a persistent cloud machine with optional local machine/browser access and MCP support."
-    },
-    {
-      "name": "Duet",
-      "repo": null,
-      "url": "https://claude.com/claude-duet",
-      "category": "personal",
-      "tableGroup": "always-on",
-      "stars": 0,
-      "license": "",
-      "pushedAt": "2026-11-24",
-      "env": {
-        "ownMachine": "default",
-        "yourMachine": "available",
-        "ownBrowser": "default",
-        "yourBrowser": "available",
-        "builtInApps": "available",
-        "anyMcp": "available"
-      },
-      "description": "Anthropic's Claude Duet always-on work agent with a managed cloud computer, optional local machine/browser control, built-in apps, and MCP."
-    },
-    {
-      "name": "Grok Bot",
-      "repo": null,
-      "url": "https://grok.com",
-      "category": "personal",
-      "tableGroup": "always-on",
-      "stars": 0,
-      "license": "",
-      "pushedAt": "2026-11-24",
-      "env": {
-        "ownMachine": "default",
-        "yourMachine": "available",
-        "ownBrowser": "default",
-        "yourBrowser": "unknown",
-        "builtInApps": "available",
-        "anyMcp": "available"
-      },
-      "description": "xAI's autonomous teammate fleet giving each persistent agent its own cloud VM sandbox, terminal, browser/computer use, and multi-bot coordination."
-    },
-    {
-      "name": "Hermes Agent",
-      "repo": "NousResearch/hermes-agent",
-      "category": "personal",
-      "tableGroup": "always-on",
-      "stars": 265632,
-      "license": "MIT",
-      "pushedAt": "2026-11-23",
-      "env": {
-        "ownMachine": "available",
-        "yourMachine": "default",
-        "ownBrowser": "default",
-        "yourBrowser": "available",
-        "builtInApps": "available",
-        "anyMcp": "available"
-      },
-      "description": "Python autonomous agent daemon by Nous Research featuring cross-session memory, messaging channels, browser tools, and self-authored skills."
-    },
-    {
-      "name": "Instinct",
-      "repo": null,
-      "url": "https://www.instinct.com",
-      "category": "personal",
-      "tableGroup": "always-on",
-      "stars": 0,
-      "license": "",
-      "pushedAt": "2026-11-24",
-      "env": {
-        "ownMachine": "default",
-        "yourMachine": "available",
-        "ownBrowser": "default",
-        "yourBrowser": "available",
-        "builtInApps": "available",
-        "anyMcp": "none"
-      },
-      "description": "Autonomous personal concierge agent controlled over text and voice calls using dedicated cloud desktops and browser automation."
-    },
-    {
-      "name": "Muse",
-      "repo": null,
-      "url": "https://ai.meta.com",
-      "category": "personal",
-      "tableGroup": "always-on",
-      "stars": 0,
-      "license": "",
-      "pushedAt": "2026-11-24",
-      "env": {
-        "ownMachine": "default",
-        "yourMachine": "available",
-        "ownBrowser": "default",
-        "yourBrowser": "available",
-        "builtInApps": "available",
-        "anyMcp": "available"
-      },
-      "description": "Meta's proactive personal agent accessible across mobile, web, and WhatsApp with a managed cloud machine, browser automation, and MCP."
-    },
-    {
-      "name": "OpenBot",
-      "repo": "CopilotKit/OpenBot",
-      "category": "personal",
-      "tableGroup": "always-on",
-      "stars": 13395,
-      "license": "MIT",
-      "pushedAt": "2026-11-24",
-      "env": {
-        "ownMachine": "default",
-        "yourMachine": "available",
-        "ownBrowser": "default",
-        "yourBrowser": "none",
-        "builtInApps": "available",
-        "anyMcp": "default"
-      },
-      "description": "Open, self-hostable workspace and multi-agent personal bot platform by CopilotKit plugging into any model, agent, and MCP server."
-    },
-    {
       "name": "OpenClaw",
       "repo": "openclaw/openclaw",
       "category": "personal",
-      "tableGroup": "always-on",
+      "matrixOrder": 1,
       "stars": 395103,
       "license": "MIT",
       "pushedAt": "2026-11-23",
@@ -501,32 +44,73 @@
         "builtInApps": "available",
         "anyMcp": "available"
       },
-      "description": "Self-hosted, pluggable TypeScript personal agent gateway connecting local automations and browser control to 20+ messaging apps."
+      "channels": {
+        "ownApp": "default",
+        "terminal": "default",
+        "texting": "available",
+        "chatApps": "available",
+        "voice": "available",
+        "email": "none"
+      },
+      "description": "Self-hosted, pluggable TypeScript personal agent gateway connecting local automations, cron triggers, and browser control to 20+ messaging apps."
     },
     {
-      "name": "Poke",
-      "repo": null,
-      "url": "https://poke.com",
+      "name": "Hermes Agent",
+      "repo": "NousResearch/hermes-agent",
       "category": "personal",
-      "tableGroup": "always-on",
-      "stars": 0,
-      "license": "",
-      "pushedAt": "2026-11-24",
+      "matrixOrder": 2,
+      "stars": 265632,
+      "license": "MIT",
+      "pushedAt": "2026-11-23",
       "env": {
-        "ownMachine": "default",
-        "yourMachine": "none",
+        "ownMachine": "available",
+        "yourMachine": "default",
         "ownBrowser": "default",
-        "yourBrowser": "none",
+        "yourBrowser": "available",
         "builtInApps": "available",
         "anyMcp": "available"
       },
-      "description": "Messaging-native proactive personal assistant operating across iMessage, WhatsApp, Telegram, and RCS with cloud browser execution and MCP."
+      "channels": {
+        "ownApp": "default",
+        "terminal": "default",
+        "texting": "available",
+        "chatApps": "available",
+        "voice": "available",
+        "email": "available"
+      },
+      "description": "Python autonomous agent daemon by Nous Research featuring persistent memory, messaging/email channels, scheduled tasks, and self-authored skills."
+    },
+    {
+      "name": "OpenBot",
+      "repo": "CopilotKit/OpenBot",
+      "category": "personal",
+      "matrixOrder": 3,
+      "stars": 13395,
+      "license": "MIT",
+      "pushedAt": "2026-11-24",
+      "env": {
+        "ownMachine": "default",
+        "yourMachine": "available",
+        "ownBrowser": "default",
+        "yourBrowser": "none",
+        "builtInApps": "available",
+        "anyMcp": "default"
+      },
+      "channels": {
+        "ownApp": "default",
+        "terminal": "none",
+        "texting": "available",
+        "chatApps": "available",
+        "voice": "available",
+        "email": "none"
+      },
+      "description": "Open, self-hostable workspace and multi-agent personal bot platform by CopilotKit plugging into any model, agent, and MCP server."
     },
     {
       "name": "TrustClaw",
       "repo": "ComposioHQ/trustclaw",
       "category": "personal",
-      "tableGroup": "always-on",
+      "matrixOrder": 4,
       "stars": 919,
       "license": "MIT",
       "pushedAt": "2026-11-17",
@@ -538,31 +122,371 @@
         "builtInApps": "available",
         "anyMcp": "none"
       },
+      "channels": {
+        "ownApp": "default",
+        "terminal": "none",
+        "texting": "none",
+        "chatApps": "available",
+        "voice": "none",
+        "email": "none"
+      },
       "description": "Self-hostable personal AI agent by Composio emphasizing OAuth-sandboxed cloud execution, vector memory, Telegram, and 1,000+ app integrations."
+    },
+    {
+      "name": "Poke",
+      "repo": null,
+      "url": "https://poke.com",
+      "category": "personal",
+      "matrixOrder": 5,
+      "stars": 0,
+      "license": "",
+      "pushedAt": "2026-11-24",
+      "env": {
+        "ownMachine": "default",
+        "yourMachine": "none",
+        "ownBrowser": "default",
+        "yourBrowser": "none",
+        "builtInApps": "available",
+        "anyMcp": "available"
+      },
+      "channels": {
+        "ownApp": "none",
+        "terminal": "none",
+        "texting": "default",
+        "chatApps": "available",
+        "voice": "default",
+        "email": "none"
+      },
+      "description": "Messaging-native proactive personal assistant operating across iMessage, WhatsApp, Telegram, and voice with cloud browser execution and MCP."
+    },
+    {
+      "name": "Grok Bot",
+      "repo": null,
+      "url": "https://grok.com",
+      "category": "personal",
+      "matrixOrder": 6,
+      "stars": 0,
+      "license": "",
+      "pushedAt": "2026-11-24",
+      "env": {
+        "ownMachine": "default",
+        "yourMachine": "available",
+        "ownBrowser": "default",
+        "yourBrowser": "unknown",
+        "builtInApps": "available",
+        "anyMcp": "available"
+      },
+      "channels": {
+        "ownApp": "default",
+        "terminal": "none",
+        "texting": "none",
+        "chatApps": "available",
+        "voice": "default",
+        "email": "available"
+      },
+      "description": "xAI's autonomous teammate fleet giving each persistent agent its own cloud VM sandbox, terminal, browser/computer use, and multi-bot coordination."
+    },
+    {
+      "name": "Muse",
+      "repo": null,
+      "url": "https://ai.meta.com",
+      "category": "personal",
+      "matrixOrder": 7,
+      "stars": 0,
+      "license": "",
+      "pushedAt": "2026-11-24",
+      "env": {
+        "ownMachine": "default",
+        "yourMachine": "available",
+        "ownBrowser": "default",
+        "yourBrowser": "available",
+        "builtInApps": "available",
+        "anyMcp": "available"
+      },
+      "channels": {
+        "ownApp": "default",
+        "terminal": "none",
+        "texting": "none",
+        "chatApps": "available",
+        "voice": "default",
+        "email": "available"
+      },
+      "description": "Meta's proactive personal agent across its own app, WhatsApp, voice, and email with a managed cloud machine, browser automation, and MCP."
+    },
+    {
+      "name": "Duet",
+      "repo": null,
+      "url": "https://claude.com/claude-duet",
+      "category": "personal",
+      "matrixOrder": 8,
+      "stars": 0,
+      "license": "",
+      "pushedAt": "2026-11-24",
+      "env": {
+        "ownMachine": "default",
+        "yourMachine": "available",
+        "ownBrowser": "default",
+        "yourBrowser": "available",
+        "builtInApps": "available",
+        "anyMcp": "available"
+      },
+      "channels": {
+        "ownApp": "default",
+        "terminal": "none",
+        "texting": "none",
+        "chatApps": "none",
+        "voice": "default",
+        "email": "none"
+      },
+      "description": "Anthropic's Claude Duet always-on work agent with a managed cloud computer, optional local machine/browser control, voice, built-in apps, and MCP."
+    },
+    {
+      "name": "Dots",
+      "repo": null,
+      "url": "https://openai.com/index/introducing-dots/",
+      "category": "personal",
+      "matrixOrder": 9,
+      "stars": 0,
+      "license": "",
+      "pushedAt": "2026-11-24",
+      "env": {
+        "ownMachine": "default",
+        "yourMachine": "available",
+        "ownBrowser": "default",
+        "yourBrowser": "available",
+        "builtInApps": "available",
+        "anyMcp": "available"
+      },
+      "channels": {
+        "ownApp": "default",
+        "terminal": "none",
+        "texting": "available",
+        "chatApps": "available",
+        "voice": "default",
+        "email": "none"
+      },
+      "description": "OpenAI's proactive cross-app personal agent running in a persistent cloud machine with optional local machine/browser access, chat/voice channels, and MCP."
+    },
+    {
+      "name": "Instinct",
+      "repo": null,
+      "url": "https://www.instinct.com",
+      "category": "personal",
+      "matrixOrder": 10,
+      "stars": 0,
+      "license": "",
+      "pushedAt": "2026-11-24",
+      "env": {
+        "ownMachine": "default",
+        "yourMachine": "available",
+        "ownBrowser": "default",
+        "yourBrowser": "available",
+        "builtInApps": "available",
+        "anyMcp": "none"
+      },
+      "channels": {
+        "ownApp": "none",
+        "terminal": "none",
+        "texting": "default",
+        "chatApps": "available",
+        "voice": "default",
+        "email": "available"
+      },
+      "description": "Autonomous personal concierge agent controlled natively over texting, voice calls, chat apps, and email using dedicated cloud desktops and browser automation."
+    },
+    {
+      "name": "Browser Use",
+      "repo": "browser-use/browser-use",
+      "category": "personal",
+      "stars": 121852,
+      "license": "MIT",
+      "pushedAt": "2026-11-22",
+      "description": "Open-source web automation harness enabling LLM agents to navigate, click, fill forms, and drive local or headless browsers."
+    },
+    {
+      "name": "Aider",
+      "repo": "Aider-AI/aider",
+      "category": "coding",
+      "stars": 50229,
+      "license": "Apache-2.0",
+      "pushedAt": "2026-05-22",
+      "description": "Git-native Python terminal pair programmer with repository mapping, clean multi-file diffs, and automatic commits."
+    },
+    {
+      "name": "Antigravity",
+      "repo": "google-antigravity/antigravity-cli",
+      "category": "coding",
+      "stars": 3012,
+      "license": "",
+      "pushedAt": "2026-11-23",
+      "description": "Google's agentic development harness across CLI (`agy`), desktop app, and IDE with a built-in browser agent, sandboxing, and parallel swarms."
+    },
+    {
+      "name": "Claude Code",
+      "repo": "anthropics/claude-code",
+      "category": "coding",
+      "stars": 156810,
+      "license": "",
+      "pushedAt": "2026-11-23",
+      "description": "Anthropic's coding harness across terminal, IDE extensions, Chrome extension, and official mobile Remote Control with worktrees, hooks, and scheduled runs."
+    },
+    {
+      "name": "Cline",
+      "repo": "cline/cline",
+      "category": "coding",
+      "stars": 71849,
+      "license": "Apache-2.0",
+      "pushedAt": "2026-11-23",
+      "description": "Open-source VS Code agent harness with Plan/Act modes, shadow-git checkpoints, built-in browser control, and MCP."
+    },
+    {
+      "name": "Codex",
+      "repo": "openai/codex",
+      "category": "coding",
+      "stars": 136242,
+      "license": "Apache-2.0",
+      "pushedAt": "2026-11-23",
+      "description": "OpenAI's Rust coding harness across CLI, IDE extensions, desktop, cloud, and mobile-paired remote control with OS sandboxing and scheduled automations."
+    },
+    {
+      "name": "Continue",
+      "repo": "continuedev/continue",
+      "category": "coding",
+      "stars": 36543,
+      "license": "Apache-2.0",
+      "pushedAt": "2026-11-23",
+      "description": "Open-source IDE coding assistant and agent extension for VS Code and JetBrains supporting bring-your-own models."
+    },
+    {
+      "name": "Crush",
+      "repo": "charmbracelet/crush",
+      "category": "coding",
+      "stars": 29175,
+      "license": "FSL-1.1",
+      "pushedAt": "2026-11-23",
+      "description": "Multi-model Go terminal coding harness by Charmbracelet with LSP-aware edits and MCP support."
+    },
+    {
+      "name": "Goose",
+      "repo": "aaif-goose/goose",
+      "category": "coding",
+      "stars": 56900,
+      "license": "Apache-2.0",
+      "pushedAt": "2026-11-23",
+      "description": "Single-binary Rust agent harness with native MCP extensions, named sessions, and repeatable headless recipes."
+    },
+    {
+      "name": "Grok Build",
+      "repo": "xai-org/grok-build",
+      "category": "coding",
+      "stars": 27837,
+      "license": "Apache-2.0",
+      "pushedAt": "2026-09-29",
+      "description": "xAI's open-source Rust coding harness with mouse-interactive TUI, headless CI mode, ACP editor integration, worktree subagents, MCP, and LSP."
+    },
+    {
+      "name": "Kilo Code",
+      "repo": "Kilo-Org/kilocode",
+      "category": "coding",
+      "stars": 28098,
+      "license": "MIT",
+      "pushedAt": "2026-11-23",
+      "description": "Open-source, model-agnostic coding agent spanning VS Code, JetBrains, CLI, and cloud surfaces."
+    },
+    {
+      "name": "OpenCode",
+      "repo": "anomalyco/opencode",
+      "category": "coding",
+      "stars": 228782,
+      "license": "MIT",
+      "pushedAt": "2026-11-23",
+      "description": "Open-source terminal, desktop, and self-hosted web/mobile coding harness supporting 75+ model providers and LSP."
+    },
+    {
+      "name": "Pi",
+      "repo": "earendil-works/pi",
+      "category": "coding",
+      "stars": 123506,
+      "license": "MIT",
+      "pushedAt": "2026-11-23",
+      "description": "Minimalist TypeScript terminal harness built around four core tools (`read`, `write`, `edit`, `bash`) and 25+ lifecycle hooks."
+    },
+    {
+      "name": "better-harness",
+      "repo": "QoderAI/better-harness",
+      "category": "multiplexers",
+      "stars": 2476,
+      "license": "MIT",
+      "pushedAt": "2026-11-11",
+      "description": "Open-source harness engineering toolkit for defining harnesses as code, running controlled experiments, and comparing outcomes."
+    },
+    {
+      "name": "cmux",
+      "repo": "manaflow-ai/cmux",
+      "category": "multiplexers",
+      "stars": 28919,
+      "license": "",
+      "pushedAt": "2026-11-23",
+      "description": "Ghostty-based native terminal multiplexer for AI coding agents with agent-aware notifications, an in-app scriptable split browser, and a companion mobile app."
+    },
+    {
+      "name": "Herdr",
+      "repo": "herdrdev/herdr",
+      "category": "multiplexers",
+      "stars": 52491,
+      "license": "Apache-2.0",
+      "pushedAt": "2026-11-19",
+      "description": "Rust terminal multiplexer and persistent daemon for coding agents with semantic state tracking (working/blocked/done), multi-machine SSH orchestration, and socket API."
+    },
+    {
+      "name": "oh-my-openagent",
+      "repo": "code-yeongyu/oh-my-openagent",
+      "category": "multiplexers",
+      "stars": 71082,
+      "license": "",
+      "pushedAt": "2026-11-23",
+      "description": "Multi-agent orchestration overlay for OpenCode adding parallel subagents, background tasks, and persistent execution modes."
+    },
+    {
+      "name": "OpenHarness",
+      "repo": "autonomous-ai/openharness",
+      "category": "multiplexers",
+      "stars": 1530,
+      "license": "MIT",
+      "pushedAt": "2026-11-23",
+      "description": "Open-source command center and multiplexer for running parallel coding agent sessions with persistent contexts and messaging."
+    },
+    {
+      "name": "T3 Code",
+      "repo": "pingdotgg/t3code",
+      "category": "multiplexers",
+      "stars": 74435,
+      "license": "MIT",
+      "pushedAt": "2026-11-23",
+      "description": "Unified desktop, web, and mobile multiplexer for controlling local Claude Code, Codex, and OpenCode sessions over worktrees."
+    },
+    {
+      "name": "Trellis",
+      "repo": "mindfold-ai/Trellis",
+      "category": "multiplexers",
+      "stars": 15176,
+      "license": "AGPL-3.0",
+      "pushedAt": "2026-09-29",
+      "description": "Structured agent harness overlay emphasizing versioned specs, skill recording, and coherent multi-platform workspaces."
     },
     {
       "name": "OpenHands",
       "repo": "OpenHands/OpenHands",
       "category": "autonomous",
-      "tableGroup": "always-on",
       "stars": 94160,
       "license": "MIT",
       "pushedAt": "2026-11-23",
-      "env": {
-        "ownMachine": "default",
-        "yourMachine": "available",
-        "ownBrowser": "default",
-        "yourBrowser": "none",
-        "builtInApps": "none",
-        "anyMcp": "available"
-      },
       "description": "Open-source autonomous software engineering platform (formerly OpenDevin) with containerized sandboxes, LiteLLM routing, and ACP."
     },
     {
       "name": "SWE-agent",
       "repo": "SWE-agent/SWE-agent",
       "category": "autonomous",
-      "tableGroup": null,
       "stars": 20854,
       "license": "MIT",
       "pushedAt": "2026-11-16",
@@ -572,7 +496,6 @@
       "name": "TrueForge",
       "repo": "truefoundry/trueforge",
       "category": "autonomous",
-      "tableGroup": null,
       "stars": 6626,
       "license": "MIT",
       "pushedAt": "2026-11-23",
@@ -582,7 +505,6 @@
       "name": "Antigravity SDK (Python)",
       "repo": "google-antigravity/antigravity-sdk-python",
       "category": "sdks",
-      "tableGroup": null,
       "stars": 4178,
       "license": "Apache-2.0",
       "pushedAt": "2026-11-19",
@@ -592,7 +514,6 @@
       "name": "Claude Agent SDK (Python)",
       "repo": "anthropics/claude-agent-sdk-python",
       "category": "sdks",
-      "tableGroup": null,
       "stars": 8632,
       "license": "MIT",
       "pushedAt": "2026-11-20",
@@ -602,7 +523,6 @@
       "name": "Claude Agent SDK (TypeScript)",
       "repo": "anthropics/claude-agent-sdk-typescript",
       "category": "sdks",
-      "tableGroup": null,
       "stars": 1902,
       "license": "",
       "pushedAt": "2026-11-20",
@@ -612,7 +532,6 @@
       "name": "Deep Agents",
       "repo": "langchain-ai/deepagents",
       "category": "sdks",
-      "tableGroup": null,
       "stars": 31537,
       "license": "MIT",
       "pushedAt": "2026-11-23",
@@ -622,7 +541,6 @@
       "name": "OpenAI Agents SDK",
       "repo": "openai/openai-agents-python",
       "category": "sdks",
-      "tableGroup": null,
       "stars": 30842,
       "license": "MIT",
       "pushedAt": "2026-11-23",
@@ -632,7 +550,6 @@
       "name": "Strands Agents Harness SDK",
       "repo": "strands-agents/harness-sdk",
       "category": "sdks",
-      "tableGroup": null,
       "stars": 9279,
       "license": "Apache-2.0",
       "pushedAt": "2026-11-23",

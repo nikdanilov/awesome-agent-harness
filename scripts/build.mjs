@@ -36,7 +36,7 @@ function slug(title) {
     .replace(/ /g, "-");
 }
 
-function envSymbol(val) {
+function symbol(val) {
   switch (val) {
     case "default":
       return "●";
@@ -114,20 +114,10 @@ function buildMeta(h) {
   return parts.length ? ` *(${parts.join(" · ")})*` : "";
 }
 
-function buildTable(groupId) {
-  const headers = ["Harness", "Mobile", "Browser", "Parallel", "Models"];
-  const items = data.harnesses
-    .filter((h) => h.tableGroup === groupId)
-    .sort((a, b) => (b.stars || 0) - (a.stars || 0));
-
-  const rows = items.map((h) => [
-    `**${h.name}**${buildMeta(h)}`,
-    h.mobile,
-    h.browser,
-    h.parallel,
-    h.models,
-  ]);
-  return alignTable(headers, rows);
+function validatedEntries() {
+  return data.harnesses
+    .filter((h) => h.env && h.channels)
+    .sort((a, b) => (a.matrixOrder ?? 999) - (b.matrixOrder ?? 999));
 }
 
 function buildEnvTable() {
@@ -141,28 +131,44 @@ function buildEnvTable() {
     "Any MCP",
   ];
   const alignments = ["left", "center", "center", "center", "center", "center", "center"];
-  const items = data.harnesses
-    .filter((h) => h.tableGroup === "always-on" && h.env)
-    .sort((a, b) => {
-      if ((b.stars || 0) !== (a.stars || 0)) return (b.stars || 0) - (a.stars || 0);
-      return a.name.toLowerCase().localeCompare(b.name.toLowerCase());
-    });
-
-  const rows = items.map((h) => [
+  const rows = validatedEntries().map((h) => [
     `**${h.name}**${buildMeta(h)}`,
-    envSymbol(h.env.ownMachine),
-    envSymbol(h.env.yourMachine),
-    envSymbol(h.env.ownBrowser),
-    envSymbol(h.env.yourBrowser),
-    envSymbol(h.env.builtInApps),
-    envSymbol(h.env.anyMcp),
+    symbol(h.env.ownMachine),
+    symbol(h.env.yourMachine),
+    symbol(h.env.ownBrowser),
+    symbol(h.env.yourBrowser),
+    symbol(h.env.builtInApps),
+    symbol(h.env.anyMcp),
+  ]);
+  return alignTable(headers, rows, alignments);
+}
+
+function buildChannelsTable() {
+  const headers = [
+    "Harness",
+    "Own App",
+    "Terminal",
+    "Texting",
+    "Chat Apps",
+    "Voice",
+    "Email",
+  ];
+  const alignments = ["left", "center", "center", "center", "center", "center", "center"];
+  const rows = validatedEntries().map((h) => [
+    `**${h.name}**${buildMeta(h)}`,
+    symbol(h.channels.ownApp),
+    symbol(h.channels.terminal),
+    symbol(h.channels.texting),
+    symbol(h.channels.chatApps),
+    symbol(h.channels.voice),
+    symbol(h.channels.email),
   ]);
   return alignTable(headers, rows, alignments);
 }
 
 function buildReadme() {
   const toc = [
-    "- [At a Glance](#at-a-glance)",
+    "- [Comparison](#comparison)",
     ...data.categories.map((c) => `- [${c.title}](#${slug(c.title)})`),
   ];
 
@@ -188,10 +194,15 @@ function buildReadme() {
   const md = [
     "# Awesome Agent Harness [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)",
     "",
-    "> A curated list of AI agent harnesses—the execution runtimes wrapped around LLMs that own the agent loop, context management, tool calling, permissions, and workspace isolation.",
+    "> A curated list of AI agent harnesses—the execution runtimes wrapped around LLMs that own the agent loop, tools, channels, memory, and proactive triggers.",
     "",
     "```text",
     "Agent = Model + Harness",
+    "",
+    "  01 Tools       Machine / terminal, browser, API, MCP, CLI",
+    "  02 Channels    Own app, terminal, texting, chat apps, voice, email",
+    "  03 Memory      Persistent state injected into context + memory tools",
+    "  04 Proactivity Cron schedules & webhooks that wake the loop without a human prompt",
     "```",
     "",
     "Every project listed here **owns and executes the agent loop**. Adjacent infrastructure (standalone sandboxes, memory databases, observability platforms, prompt/skill packs, and general workflow frameworks) is intentionally excluded.",
@@ -202,21 +213,17 @@ function buildReadme() {
     "",
     "---",
     "",
-    "## At a Glance",
-    "",
-    "### Coding Harnesses",
-    "",
-    buildTable("coding"),
-    "",
-    "### Agent Multiplexers & Control Planes",
-    "",
-    buildTable("multiplexers"),
-    "",
-    "### Personal & Autonomous Agents",
+    "## Comparison",
     "",
     "`●` Default · `○` Available · `—` Not offered · `?` Not published",
     "",
+    "### Tools & Environment",
+    "",
     buildEnvTable(),
+    "",
+    "### Channels",
+    "",
+    buildChannelsTable(),
     "",
     "---",
     "",
